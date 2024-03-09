@@ -15,7 +15,7 @@
  */
 @NonNullApi
 @NonNullFields
-package com.yourorg;
+package org.openrewrite.nodejs;
 
 // We annotate the package to indicate that fields and methods in this package are non-null by default.
 import org.openrewrite.internal.lang.NonNullApi;

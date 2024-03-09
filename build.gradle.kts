@@ -6,12 +6,8 @@ group = "org.openrewrite.recipe"
 description = "Rewrite Node.js."
 
 dependencies {
-    // The bom version can also be set to a specific version
-    // https://github.com/openrewrite/rewrite-recipe-bom/releases
-    implementation(platform("org.openrewrite.recipe:rewrite-recipe-bom:latest.release"))
-
-    implementation("org.openrewrite:rewrite-json")
-    implementation("org.openrewrite:rewrite-core")
+    implementation("org.openrewrite:rewrite-json:8.19.0")
+    implementation("org.openrewrite:rewrite-core:8.19.0")
 }
 
 configure<PublishingExtension> {

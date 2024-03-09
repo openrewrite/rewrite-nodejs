@@ -1,0 +1,6 @@
+---
+type: specs.openrewrite.org/v1beta/category
+name: Node.js
+packageName: org.openrewrite.nodejs
+description: Node.js dependency and package management.
+---
