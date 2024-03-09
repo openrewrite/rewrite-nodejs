@@ -47,7 +47,7 @@ public class FindNodeProjects extends ScanningRecipe<AtomicBoolean> {
 
     @Override
     public TreeVisitor<?, ExecutionContext> getScanner(AtomicBoolean hasPackageLock) {
-        return Preconditions.check(new IsPackageJson<>(), new JsonVisitor<ExecutionContext>() {
+        return Preconditions.check(new IsPackageLockJson<>(), new JsonVisitor<ExecutionContext>() {
             @Override
             public Json visitDocument(Json.Document document, ExecutionContext ctx) {
                 hasPackageLock.set(true);
