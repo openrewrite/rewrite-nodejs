@@ -15,17 +15,29 @@
  */
 package org.openrewrite.nodejs;
 
+import lombok.EqualsAndHashCode;
+import lombok.Value;
 import org.openrewrite.*;
+import org.openrewrite.internal.StringUtils;
+import org.openrewrite.json.JsonIsoVisitor;
 import org.openrewrite.json.JsonPathMatcher;
-import org.openrewrite.json.JsonVisitor;
 import org.openrewrite.json.tree.Json;
 import org.openrewrite.nodejs.search.IsPackageJson;
 
+@Value
+@EqualsAndHashCode(callSuper = false)
 public class UpgradeDependencyVersion extends Recipe {
 
-    @Option(displayName = "Update `package-lock.json`",
-            description = "As of NPM 5.1.",
-            example = "react-dom")
+    @Option(displayName = "Name pattern",
+            description = "Name glob pattern used to match dependencies",
+            example = "@apollo*")
+    String namePattern;
+
+    @Option(displayName = "Version",
+            description = "Set the version to upgrade to." +
+                          "Node-style [version selectors](https://docs.openrewrite.org/reference/dependency-version-selectors) may be used.",
+            example = "1.x")
+    String version;
 
     @Override
     public String getDisplayName() {
@@ -34,7 +46,7 @@ public class UpgradeDependencyVersion extends Recipe {
 
     @Override
     public String getDescription() {
-        return "Upgrade matching Node.js dependencies";
+        return "Upgrade matching Node.js direct dependencies.";
     }
 
     @Override
@@ -42,14 +54,27 @@ public class UpgradeDependencyVersion extends Recipe {
         // NOTE that `npm upgrade <pkg>` will update the package-lock.json as well.
         // we might consider modifying the package.json with the new version and then
         // triggering that.
+
         JsonPathMatcher dependency = new JsonPathMatcher("$.dependencies");
-        return Preconditions.check(new IsPackageJson<>(), new JsonVisitor<ExecutionContext>() {
+        JsonPathMatcher devDependencies = new JsonPathMatcher("$.devDependencies");
+        return Preconditions.check(new IsPackageJson<>(), new JsonIsoVisitor<ExecutionContext>() {
             @Override
-            public Json visitMember(Json.Member member, ExecutionContext ctx) {
-                if (dependency.matches(getCursor())) {
-                    System.out.println("here");
+            public Json.Member visitMember(Json.Member member, ExecutionContext ctx) {
+                Json.Member m = super.visitMember(member, ctx);
+                Cursor maybeDependencies = getCursor().getParent(2);
+                if (maybeDependencies != null && (dependency.matches(maybeDependencies) || devDependencies.matches(maybeDependencies))) {
+                    String name = ((Json.Literal) member.getKey()).getValue().toString();
+                    if (StringUtils.matchesGlob(name, namePattern)) {
+                        Json.Literal versionLiteral = (Json.Literal) member.getValue();
+                        String requestedVersion = versionLiteral.getValue().toString();
+                        if (!requestedVersion.equals(version)) {
+                            m = m.withValue(versionLiteral
+                                    .withValue(version)
+                                    .withSource("\"" + version + "\""));
+                        }
+                    }
                 }
-                return super.visitMember(member, ctx);
+                return m;
             }
         });
     }
