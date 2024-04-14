@@ -16,12 +16,14 @@
 package org.openrewrite.nodejs.search;
 
 import org.junit.jupiter.api.Test;
+import org.openrewrite.DocumentExample;
 import org.openrewrite.test.RewriteTest;
 
 import static org.openrewrite.json.Assertions.json;
 
-public class DependencyInsightTest implements RewriteTest {
+class DependencyInsightTest implements RewriteTest {
 
+    @DocumentExample
     @Test
     void direct() {
         //noinspection JsonStandardCompliance
