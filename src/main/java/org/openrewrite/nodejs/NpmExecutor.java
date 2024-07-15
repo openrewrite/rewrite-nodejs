@@ -29,5 +29,5 @@ public class NpmExecutor implements ShellExecutor {
     @With
     @Nullable
     // Path to the directory containing the npm configuration files
-    private Path configurationDirectory;
+    protected Path configurationDirectory;
 }
