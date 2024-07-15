@@ -5,9 +5,15 @@ plugins {
 group = "org.openrewrite.recipe"
 description = "Rewrite Node.js."
 
+val rewriteVersion = if(project.hasProperty("releasing")) {
+    "latest.release"
+} else {
+    "latest.integration"
+}
+
 dependencies {
-    implementation("org.openrewrite:rewrite-json:8.19.0")
-    implementation("org.openrewrite:rewrite-core:8.19.0")
+    implementation("org.openrewrite:rewrite-json:${rewriteVersion}")
+    implementation("org.openrewrite:rewrite-core:${rewriteVersion}")
 }
 
 configure<PublishingExtension> {
