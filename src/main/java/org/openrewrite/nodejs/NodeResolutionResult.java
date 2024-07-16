@@ -35,8 +35,7 @@ public class NodeResolutionResult {
     Collection<Dependency> dependencies;
     Collection<Dependency> devDependencies;
 
-    @Nullable
-    public Dependency getDependency(String name) {
+    public @Nullable Dependency getDependency(String name) {
         for (Dependency d : dependencies) {
             if (d.getName().equals(name)) {
                 return d;
