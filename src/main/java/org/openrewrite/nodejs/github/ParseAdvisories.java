@@ -21,7 +21,6 @@ import com.fasterxml.jackson.dataformat.csv.CsvFactory;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import org.openrewrite.nodejs.Vulnerability;
 import org.openrewrite.nodejs.github.advisories.Advisory;
 import org.openrewrite.nodejs.github.advisories.Affected;
 import org.openrewrite.nodejs.github.advisories.Range;
