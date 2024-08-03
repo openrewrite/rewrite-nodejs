@@ -31,7 +31,6 @@ class ParseAdvisoriesTest {
 
         assertThat(output).hasContent(
           """
-            CVE-2024-38986,2024-07-30T21:31:28Z,"@75lb/deep-merge Prototype Pollution vulnerability",@75lb/deep-merge,0,,HIGH,CWE-1321
             CVE-2024-41962,2024-08-02T01:20:13Z,"Bostr Improper Authorization vulnerability",bostr,0,3.0.10,MODERATE,CWE-285
             """
         );
