@@ -5,15 +5,14 @@ plugins {
 group = "org.openrewrite.recipe"
 description = "Rewrite Node.js."
 
-val rewriteVersion = if(project.hasProperty("releasing")) {
-    "latest.release"
-} else {
-    "latest.integration"
-}
-
+val rewriteVersion = rewriteRecipe.rewriteVersion.get()
 dependencies {
-    implementation("org.openrewrite:rewrite-json:${rewriteVersion}")
-    implementation("org.openrewrite:rewrite-core:${rewriteVersion}")
+    implementation(platform("org.openrewrite:rewrite-bom:$rewriteVersion"))
+    implementation("org.openrewrite:rewrite-json")
+    implementation("org.openrewrite:rewrite-core")
+
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
 }
 
 configure<PublishingExtension> {
@@ -31,4 +30,8 @@ publishing {
           url = uri("https://us-west1-maven.pkg.dev/moderne-dev/moderne-recipe")
       }
   }
+}
+
+license {
+    exclude("**/*.json")
 }
