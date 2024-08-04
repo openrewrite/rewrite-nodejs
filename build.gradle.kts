@@ -32,16 +32,6 @@ publishing {
   }
 }
 
-tasks {
-    // ./gradlew parseGithubAdvisoryDatabase --args="./advisory-database src/main/resources/advisories.csv"
-    val parseGithubAdvisoryDatabase by registering(JavaExec::class) {
-        group = "generate"
-        description = "Parse github/advisories-database and generate a CSV file."
-        mainClass = "org.openrewrite.nodejs.github.ParseAdvisories"
-        classpath = sourceSets.getByName("main").runtimeClasspath
-    }
-}
-
 license {
     exclude("**/*.json")
 }
