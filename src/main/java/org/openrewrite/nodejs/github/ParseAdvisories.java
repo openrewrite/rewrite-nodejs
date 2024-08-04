@@ -59,11 +59,11 @@ public class ParseAdvisories {
 
     static void parseAdvisories(File advisoriesRepoInput, File advisoriesCsvOutput) throws IOException {
         try (FileOutputStream fos = new FileOutputStream(advisoriesCsvOutput)) {
-            Files.walkFileTree(advisoriesRepoInput.toPath(), emptySet(), 16, new MavenAdvisoriesVisitor(fos));
+            Files.walkFileTree(advisoriesRepoInput.toPath(), emptySet(), 16, new NpmAdvisoriesVisitor(fos));
         }
     }
 
-    private static final class MavenAdvisoriesVisitor extends SimpleFileVisitor<Path> {
+    private static final class NpmAdvisoriesVisitor extends SimpleFileVisitor<Path> {
         private final FileOutputStream fos;
         private final ObjectMapper reader;
         private final ObjectWriter writer;
