@@ -68,7 +68,7 @@ public class ParseAdvisories {
         private final ObjectMapper reader;
         private final ObjectWriter writer;
 
-        public MavenAdvisoriesVisitor(FileOutputStream fos) {
+        public NpmAdvisoriesVisitor(FileOutputStream fos) {
             this.fos = fos;
             this.reader = getObjectMapper();
             this.writer = getObjectWriter();
