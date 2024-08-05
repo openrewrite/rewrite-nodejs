@@ -22,9 +22,11 @@ import com.fasterxml.jackson.databind.cfg.ConstructorDetector;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import lombok.Value;
+import org.openrewrite.Validated;
 import org.openrewrite.internal.lang.Nullable;
 import org.openrewrite.json.tree.Json;
 import org.openrewrite.semver.Semver;
+import org.openrewrite.semver.VersionComparator;
 
 import java.util.*;
 
@@ -71,9 +73,12 @@ public class NodeResolutionResult {
                     if (pkg.getDependencies() != null) {
                         transitive = new ArrayList<>(pkg.getDependencies().size());
                         pkg.getDependencies().forEach((name, version) -> {
-                            Dependency d = new Dependency(name, Semver.validate(version, null).getValue(), null);
-                            transitive.add(d);
-                            byName.computeIfAbsent(name, n -> new ArrayList<>()).add(d);
+                            Validated<VersionComparator> validatedVersion = Semver.validate(version, null);
+                            if (validatedVersion.isValid()) {
+                                Dependency d = new Dependency(name, validatedVersion.getValue(), null);
+                                transitive.add(d);
+                                byName.computeIfAbsent(name, n -> new ArrayList<>()).add(d);
+                            }
                         });
                     } else {
                         transitive = emptyList();
@@ -89,29 +94,32 @@ public class NodeResolutionResult {
                 }
                 if (pkg.getDependencies() != null) {
                     pkg.getDependencies().forEach((name, version) -> {
-                        Dependency dep = new Dependency(name, Semver.validate(version, null).getValue(), null);
-                        if (isRoot) {
-                            dependencies.add(dep);
+                        Validated<VersionComparator> validatedVersion = Semver.validate(version, null);
+                        if (validatedVersion.isValid()) {
+                            Dependency dep = new Dependency(name, validatedVersion.getValue(), null);
+                            if (isRoot) {
+                                dependencies.add(dep);
+                            }
+                            byName.computeIfAbsent(name, n -> new ArrayList<>()).add(dep);
                         }
-                        byName.computeIfAbsent(name, n -> new ArrayList<>()).add(dep);
                     });
                 }
                 if (pkg.getDevDependencies() != null) {
                     pkg.getDevDependencies().forEach((name, version) -> {
-                        Dependency dep = new Dependency(name, Semver.validate(version, null).getValue(), null);
-                        if (isRoot) {
-                            devDependencies.add(dep);
+                        Validated<VersionComparator> validatedVersion = Semver.validate(version, null);
+                        if (validatedVersion.isValid()) {
+                            Dependency dep = new Dependency(name, validatedVersion.getValue(), null);
+                            if (isRoot) {
+                                devDependencies.add(dep);
+                            }
+                            byName.computeIfAbsent(name, n -> new ArrayList<>()).add(dep);
                         }
-                        byName.computeIfAbsent(name, n -> new ArrayList<>()).add(dep);
                     });
                 }
             });
-        } catch (
-                JsonProcessingException ignored) {
+        } catch (JsonProcessingException ignored) {
         }
-        return new
-
-                NodeResolutionResult(dependencies, devDependencies);
+        return new NodeResolutionResult(dependencies, devDependencies);
     }
 
     @Value
