@@ -17,9 +17,9 @@ package org.openrewrite.nodejs.search;
 
 import lombok.EqualsAndHashCode;
 import lombok.Value;
+import org.jspecify.annotations.Nullable;
 import org.openrewrite.*;
 import org.openrewrite.internal.StringUtils;
-import org.openrewrite.internal.lang.Nullable;
 import org.openrewrite.json.JsonIsoVisitor;
 import org.openrewrite.json.JsonPathMatcher;
 import org.openrewrite.json.JsonVisitor;

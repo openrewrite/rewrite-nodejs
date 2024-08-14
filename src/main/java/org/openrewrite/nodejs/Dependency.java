@@ -17,7 +17,7 @@ package org.openrewrite.nodejs;
 
 import lombok.Value;
 import lombok.experimental.NonFinal;
-import org.openrewrite.internal.lang.Nullable;
+import org.jspecify.annotations.Nullable;
 import org.openrewrite.semver.VersionComparator;
 
 @Value
