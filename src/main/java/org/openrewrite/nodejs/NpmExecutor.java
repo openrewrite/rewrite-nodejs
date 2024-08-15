@@ -18,7 +18,7 @@ package org.openrewrite.nodejs;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.With;
-import org.openrewrite.internal.lang.Nullable;
+import org.jspecify.annotations.Nullable;
 import org.openrewrite.shell.exec.ShellExecutor;
 
 import java.nio.file.Path;
