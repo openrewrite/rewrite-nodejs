@@ -3023,7 +3023,7 @@ CVE-2024-27448,2024-04-05T06:30:46Z,"MailDev Remote Code Execution",maildev,2.0.
 CVE-2024-27922,2024-03-05T16:24:31Z,"HTTP Handling Vulnerability in the Bare server","@tomphttp/bare-server-node",0,2.0.2,CRITICAL,CWE-444
 CVE-2024-27926,2024-03-06T17:02:34Z,"RSSHub Cross-site Scripting vulnerability caused by internal media proxy",rsshub,1.0.0-master.cbbd829,1.0.0-master.d8ca915,MODERATE,CWE-79
 CVE-2024-27927,2024-03-06T17:03:11Z,"RSSHub vulnerable to Server-Side Request Forgery",rsshub,0,1.0.0-master.a429472,MODERATE,CWE-918
-CVE-2024-28056,2024-04-15T18:30:51Z,"AWS Amplify CLI has incorrect trust policy management",@aws-amplify/cli,0,12.10.1,HIGH,CWE-269
+CVE-2024-28056,2024-04-15T18:30:51Z,"AWS Amplify CLI has incorrect trust policy management",@aws-amplify/cli,0,12.10.1,CRITICAL,CWE-269
 CVE-2024-28121,2024-03-12T15:44:49Z,"StimulusReflex arbitrary method call",stimulus_reflex,0,3.4.2,HIGH,CWE-470
 CVE-2024-28121,2024-03-12T15:44:49Z,"StimulusReflex arbitrary method call",stimulus_reflex,3.5.0.pre0,3.5.0.rc4,HIGH,CWE-470
 CVE-2024-28176,2024-03-07T17:40:57Z,"jose vulnerable to resource exhaustion via specifically crafted JWE with compressed plaintext",jose,0,2.0.7,MODERATE,CWE-400
@@ -3232,7 +3232,7 @@ CVE-2024-36578,2024-06-17T18:31:34Z,"@akbr/update Prototype Pollution",@akbr/upd
 CVE-2024-36580,2024-06-17T15:30:51Z,"@cdr0/sg Prototype Pollution",@cdr0/sg,0,,MODERATE,CWE-1321
 CVE-2024-36581,2024-06-17T15:30:54Z,"Badger Database Prototype Pollution",@abw/badger-database,0,,HIGH,CWE-1321;CWE-94
 CVE-2024-36582,2024-06-17T15:30:54Z,"object-deep-assign Prototype Pollution","@alexbinary/object-deep-assign",0,,MODERATE,
-CVE-2024-36857,2024-06-04T21:32:20Z,"Jan path traversal vulnerability",@janhq/core,0,,HIGH,CWE-22
+CVE-2024-36857,2024-06-04T21:32:20Z,"Jan path traversal vulnerability",@janhq/core,0,,HIGH,CWE-22;CWE-31
 CVE-2024-36858,2024-06-04T21:32:20Z,"Jan path traversal vulnerability",@janhq/core,0,,CRITICAL,CWE-434
 CVE-2024-37145,2024-08-05T21:29:28Z,"Flowise Cross-site Scripting in /api/v1/chatflows-streaming/id",flowise,0,,MODERATE,CWE-79
 CVE-2024-37146,2024-08-05T21:29:28Z,"Flowise Cross-site Scripting in/api/v1/credentials/id",flowise,0,,MODERATE,CWE-79
@@ -3243,7 +3243,7 @@ CVE-2024-37168,2024-06-10T21:38:05Z,"@grpc/grpc-js can allocate memory for incom
 CVE-2024-37168,2024-06-10T21:38:05Z,"@grpc/grpc-js can allocate memory for incoming messages well above configured limits",@grpc/grpc-js,1.9.0,1.9.15,MODERATE,CWE-789
 CVE-2024-37169,2024-06-05T13:29:10Z,"Arbitrary file read via Playwright's screenshot feature exploiting file wrapper",@jmondi/url-to-png,0,2.0.3,MODERATE,CWE-22
 CVE-2024-37182,2024-06-14T09:31:17Z,"Mattermost Desktop App Remote Code Execution",mattermost-desktop,0,5.8.0,MODERATE,CWE-693
-CVE-2024-37273,2024-06-04T21:32:21Z,"Jan path traversal vulnerability",@janhq/core,0,,CRITICAL,CWE-22;CWE-434
+CVE-2024-37273,2024-06-04T21:32:21Z,"Jan path traversal vulnerability",@janhq/core,0,,CRITICAL,CWE-22;CWE-434;CWE-94
 CVE-2024-37629,2024-06-12T18:30:41Z,"SummerNote Cross Site Scripting Vulnerability",summernote,0,,MODERATE,CWE-79
 CVE-2024-37890,2024-06-17T19:09:10Z,"ws affected by a DoS when handling a request with many HTTP headers",ws,2.1.0,5.2.4,HIGH,CWE-476
 CVE-2024-37890,2024-06-17T19:09:10Z,"ws affected by a DoS when handling a request with many HTTP headers",ws,6.0.0,6.2.3,HIGH,CWE-476
@@ -3263,6 +3263,7 @@ CVE-2024-38375,2024-06-26T19:12:23Z,"@fastly/js-compute has a use-after-free in 
 CVE-2024-38527,2024-06-26T19:03:54Z,"Cross-site Scripting in ZenUML",@zenuml/core,0,3.23.25,MODERATE,CWE-79;CWE-80
 CVE-2024-38986,2024-07-30T21:31:28Z,"@75lb/deep-merge Prototype Pollution vulnerability",@75lb/deep-merge,0,1.1.2,HIGH,CWE-1321
 CVE-2024-38987,2024-07-01T15:32:09Z,"@aofl/cli-lib Prototype Pollution vulnerability",@aofl/cli-lib,0,,MODERATE,CWE-1321
+CVE-2024-38989,2024-08-12T15:30:49Z,"Prototype pollution in izatop bunt",@bunt/app,0,0.29.26,CRITICAL,CWE-1321
 CVE-2024-38993,2024-07-01T15:32:13Z,"jsonic was discovered to contain a prototype pollution via the function empty.",jsonic,0,,CRITICAL,CWE-1321;CWE-94
 CVE-2024-38996,2024-07-01T15:32:17Z,"Prototype pollution in ag-grid-community via the _.mergeDeep function",ag-grid-community,31.3.2,32.0.1,CRITICAL,CWE-1321
 CVE-2024-38996,2024-07-01T15:32:17Z,"Prototype pollution in ag-grid-community via the _.mergeDeep function",ag-grid-enterprise,31.3.2,32.0.1,CRITICAL,CWE-1321
@@ -3274,6 +3275,7 @@ CVE-2024-39008,2024-07-01T15:32:22Z,"robinweser fast-loops vulnerable to prototy
 CVE-2024-39018,2024-07-01T15:32:30Z,"@cat5th/key-serializer Prototype Pollution vulnerability",@cat5th/key-serializer,0,,MODERATE,CWE-1321
 CVE-2024-39309,2024-07-01T18:35:04Z,"ZDI-CAN-23894: Parse Server literalizeRegexPart SQL Injection Authentication Bypass Vulnerability",parse-server,0,6.5.7,CRITICAL,CWE-288
 CVE-2024-39309,2024-07-01T18:35:04Z,"ZDI-CAN-23894: Parse Server literalizeRegexPart SQL Injection Authentication Bypass Vulnerability",parse-server,7.0.0,7.1.0,CRITICAL,CWE-288
+CVE-2024-39338,2024-08-12T15:30:49Z,"Server-Side Request Forgery in axios",axios,1.3.2,1.7.4,HIGH,CWE-918
 CVE-2024-39687,2024-07-05T20:07:54Z,"Server Side Request Forgery (SSRF) attack in Fedify",@fedify/fedify,0,0.9.2,HIGH,CWE-918
 CVE-2024-39687,2024-07-05T20:07:54Z,"Server Side Request Forgery (SSRF) attack in Fedify",@fedify/fedify,0.10.0,0.10.2,HIGH,CWE-918
 CVE-2024-39687,2024-07-05T20:07:54Z,"Server Side Request Forgery (SSRF) attack in Fedify",@fedify/fedify,0.11.0,0.11.2,HIGH,CWE-918
@@ -3299,13 +3301,18 @@ CVE-2024-41945,2024-07-30T21:13:42Z,"The fuels-ts typescript SDK has no awarenes
 CVE-2024-41962,2024-08-02T01:20:13Z,"Bostr Improper Authorization vulnerability",bostr,0,3.0.10,MODERATE,CWE-285
 CVE-2024-42347,2024-08-06T14:12:45Z,"Matrix SDK for React's URL preview setting for a room is controllable by the homeserver",matrix-react-sdk,0,3.105.1,MODERATE,CWE-359
 CVE-2024-42352,2024-08-05T19:49:55Z,"Nuxt Icon affected by a Server-Side Request Forgery (SSRF)",@nuxt/icon,0,1.4.5,HIGH,CWE-918
-CVE-2024-42459,2024-08-02T09:31:35Z,"Elliptic's EDDSA missing signature length check",elliptic,4.0.0,,LOW,CWE-347
-CVE-2024-42460,2024-08-02T09:31:35Z,"Elliptic's ECDSA missing check for whether leading bit of r and s is zero",elliptic,2.0.0,,LOW,CWE-130
-CVE-2024-42461,2024-08-02T09:31:35Z,"Elliptic allows BER-encoded signatures",elliptic,5.2.1,,LOW,CWE-347
+CVE-2024-42459,2024-08-02T09:31:35Z,"Elliptic's EDDSA missing signature length check",elliptic,4.0.0,6.5.7,LOW,CWE-347
+CVE-2024-42460,2024-08-02T09:31:35Z,"Elliptic's ECDSA missing check for whether leading bit of r and s is zero",elliptic,2.0.0,6.5.7,LOW,CWE-130
+CVE-2024-42461,2024-08-02T09:31:35Z,"Elliptic allows BER-encoded signatures",elliptic,5.2.1,6.5.7,LOW,CWE-347
+CVE-2024-43368,2024-08-14T18:11:53Z,"Trix has a cross-site Scripting vulnerability on copy & paste ",trix,0,2.1.4,MODERATE,CWE-79
+CVE-2024-43370,2024-08-15T18:06:50Z,"gettext.js has a Cross-site Scripting injection ",gettext.js,0,2.0.3,HIGH,CWE-79
+CVE-2024-43373,2024-08-14T18:01:06Z,"webcrack has an Arbitrary File Write Vulnerability on Windows when Parsing and Saving a Malicious Bundle",webcrack,0,2.14.1,HIGH,CWE-20;CWE-22
 CVE-2024-4367,2024-05-07T10:25:08Z,"PDF.js vulnerable to arbitrary JavaScript execution upon opening a malicious PDF",pdfjs-dist,0,4.2.67,HIGH,
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6484,2024-07-11T18:31:14Z,"Bootstrap Cross-Site Scripting (XSS) vulnerability",bootstrap,2.0.0,,MODERATE,CWE-79
 CVE-2024-6531,2024-07-11T18:31:14Z,"Bootstrap Cross-Site Scripting (XSS) vulnerability",bootstrap,4.0.0,,MODERATE,CWE-79
+CVE-2024-6533,2024-08-15T03:30:28Z,"Code injection in Directus",directus,0,,MODERATE,CWE-79
+CVE-2024-6534,2024-08-15T06:32:22Z,"Improper access control in Directus",directus,0,,MODERATE,CWE-639
 CVE-2024-6783,2024-07-23T15:31:09Z,"vue-template-compiler vulnerable to client-side Cross-Site Scripting (XSS)",vue-template-compiler,2.0.0,3.0.0,MODERATE,CWE-79
 CVE-2024-6833,2024-07-17T15:30:52Z,"Zowe CLI allows storage of previously entered secure credentials in a plaintext file",@zowe/cli,7.18.0,7.23.5,MODERATE,CWE-256
 GHSA-224h-p7p5-rh85,2020-09-01T17:32:26Z,"Directory Traversal in wenluhong1",wenluhong1,0.0.0,,HIGH,CWE-22
@@ -3377,7 +3384,7 @@ GHSA-3gpc-w23c-w59w,2020-09-04T15:02:06Z,"Sandbox Breakout / Arbitrary Code Exec
 GHSA-3h99-v4qw-p2h5,2020-09-03T19:41:56Z,"Malicious Package in coinpayment",coinpayment,0.0.0,,CRITICAL,CWE-506
 GHSA-3h9m-9g3g-5wqx,2020-09-03T22:13:14Z,"Malicious Package in buffer-xov",buffer-xov,0.0.0,,CRITICAL,CWE-506
 GHSA-3mhm-jvqj-fvhg,2020-09-03T23:09:37Z,"Malicious Package in js-sia3",js-sia3,0.0.0,,CRITICAL,CWE-506
-GHSA-3mpp-xfvh-qh37,2022-03-16T23:54:35Z,"node-ipc behavior change",node-ipc,11.0.0,,LOW,
+GHSA-3mpp-xfvh-qh37,2022-03-16T23:54:35Z,"node-ipc behavior change",node-ipc,11.0.0,12.0.0,LOW,
 GHSA-3p92-886g-qxpq,2019-06-04T15:42:32Z,"Remote Memory Exposure in floody",floody,0,0.1.1,MODERATE,CWE-201
 GHSA-3qmc-2r76-4rqp,2022-11-10T15:51:01Z,"Redwood is vulnerable to account takeover via dbAuth ""forgot-password"" ",@redwoodjs/api,0.38.0,2.2.5,HIGH,
 GHSA-3qmc-2r76-4rqp,2022-11-10T15:51:01Z,"Redwood is vulnerable to account takeover via dbAuth ""forgot-password"" ",@redwoodjs/api,3.0.0,3.3.1,HIGH,
