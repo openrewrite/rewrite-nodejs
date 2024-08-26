@@ -2986,7 +2986,7 @@ CVE-2024-23724,2024-02-11T03:30:17Z,"Ghost has possible Cross-site Scripting iss
 CVE-2024-23724,2024-02-11T03:30:17Z,"Ghost has possible Cross-site Scripting issue",ghost,0,,MODERATE,
 CVE-2024-23725,2024-01-21T06:30:22Z,"Cross-site Scripting in Ghost",ghost,0,5.76.0,MODERATE,CWE-79
 CVE-2024-23841,2024-01-30T20:57:45Z,"@apollo/experimental-nextjs-app-support Cross-site Scripting vulnerability","@apollo/experimental-nextjs-app-support",0,0.7.0,HIGH,CWE-80
-CVE-2024-24293,2024-05-20T18:31:23Z,"MiguelCastillo @bit/loader Prototype Pollution issue",@bit/loader,0,,MODERATE,CWE-1321
+CVE-2024-24293,2024-05-20T18:31:23Z,"MiguelCastillo @bit/loader Prototype Pollution issue",@bit/loader,0,,HIGH,CWE-1321
 CVE-2024-24294,2024-05-20T18:31:22Z,"Blackprint @blackprint/engine Prototype Pollution issue",@blackprint/engine,0.8.12,0.9.2,CRITICAL,CWE-1321;CWE-94
 CVE-2024-24396,2024-02-05T21:30:31Z,"Stimulsoft Dashboard.JS Cross Site Scripting vulnerability",stimulsoft-dashboards-js,0,2024.1.2,MODERATE,CWE-79
 CVE-2024-24397,2024-02-05T18:31:37Z,"Stimulsoft Dashboard.JS Cross Site Scripting vulnerability",stimulsoft-dashboards-js,0,2024.1.2,MODERATE,CWE-79
@@ -3000,8 +3000,8 @@ CVE-2024-24758,2024-02-16T16:02:52Z,"Undici proxy-authorization header not clear
 CVE-2024-24815,2024-02-07T17:30:37Z,"CKEditor4 Cross-site Scripting vulnerability caused by incorrect CDATA detection",ckeditor4,0,4.24.0-lts,MODERATE,CWE-79
 CVE-2024-24816,2024-02-07T17:31:34Z,"CKEditor4 Cross-site Scripting vulnerability in samples with enabled the preview feature",ckeditor4,0,4.24.0-lts,MODERATE,CWE-79
 CVE-2024-24828,2024-02-09T15:20:27Z,"Pkg Local Privilege Escalation",pkg,0,,MODERATE,CWE-276
-CVE-2024-25466,2024-02-16T09:30:26Z,"React Native Document Picker Directory Traversal vulnerability","react-native-document-picker",0,8.2.2,MODERATE,
-CVE-2024-25466,2024-02-16T09:30:26Z,"React Native Document Picker Directory Traversal vulnerability","react-native-document-picker",9.0.0,9.1.1,MODERATE,
+CVE-2024-25466,2024-02-16T09:30:26Z,"React Native Document Picker Directory Traversal vulnerability","react-native-document-picker",0,8.2.2,HIGH,CWE-26
+CVE-2024-25466,2024-02-16T09:30:26Z,"React Native Document Picker Directory Traversal vulnerability","react-native-document-picker",9.0.0,9.1.1,HIGH,CWE-26
 CVE-2024-26135,2024-02-21T00:10:30Z,"MeshCentral cross-site websocket hijacking (CSWSH) vulnerability",meshcentral,0,1.1.21,HIGH,CWE-346
 CVE-2024-26150,2024-02-23T18:02:08Z,"`@backstage/backend-common` vulnerable to path traversal through symlinks","@backstage/backend-common",0,0.19.10,HIGH,CWE-22
 CVE-2024-26150,2024-02-23T18:02:08Z,"`@backstage/backend-common` vulnerable to path traversal through symlinks","@backstage/backend-common",0.20.0,0.20.2,HIGH,CWE-22
@@ -3290,7 +3290,9 @@ CVE-2024-39896,2024-07-08T18:41:57Z,"Directus Allows Single Sign-On User Enumera
 CVE-2024-39918,2024-07-15T17:46:57Z,"@jmondi/url-to-png contains a Path Traversal vulnerability",@jmondi/url-to-png,0,2.1.2,MODERATE,CWE-22
 CVE-2024-39919,2024-07-15T17:47:00Z,"@jmondi/url-to-png enables capture screenshot of localhost web services (unauthenticated pages)",@jmondi/url-to-png,0,2.1.2,LOW,CWE-200
 CVE-2024-39943,2024-07-05T00:31:07Z,"rejetto HFS vulnerable to OS Command Execution by remote authenticated users",hfs,0,0.52.10,CRITICAL,CWE-284;CWE-78
+CVE-2024-40453,2024-08-21T18:31:28Z,"squirrelly Code Injection vulnerability",squirrelly,9.0.0,9.1.0,HIGH,CWE-94
 CVE-2024-40631,2024-07-15T18:33:22Z,"Plate media plugins has a XSS in media embed element when using custom URL parsers",@udecode/plate-media,0,36.0.10,HIGH,CWE-79
+CVE-2024-4067,2024-05-14T18:30:54Z,"Regular Expression Denial of Service (ReDoS) in micromatch",micromatch,0,4.0.8,MODERATE,CWE-1333
 CVE-2024-4068,2024-05-14T18:30:54Z,"Uncontrolled resource consumption in braces",braces,0,3.0.3,HIGH,CWE-1050;CWE-400
 CVE-2024-4128,2024-05-02T15:30:35Z,"Firebase vulnerable to CRSF attack",firebase-tools,0,13.6.0,LOW,CWE-352
 CVE-2024-4146,2024-06-08T21:30:38Z,"lunary-ai/lunary allows users unauthorized access to projects",lunary,0,1.2.26,CRITICAL,CWE-285;CWE-863
@@ -3301,13 +3303,19 @@ CVE-2024-41945,2024-07-30T21:13:42Z,"The fuels-ts typescript SDK has no awarenes
 CVE-2024-41962,2024-08-02T01:20:13Z,"Bostr Improper Authorization vulnerability",bostr,0,3.0.10,MODERATE,CWE-285
 CVE-2024-42347,2024-08-06T14:12:45Z,"Matrix SDK for React's URL preview setting for a room is controllable by the homeserver",matrix-react-sdk,0,3.105.1,MODERATE,CWE-359
 CVE-2024-42352,2024-08-05T19:49:55Z,"Nuxt Icon affected by a Server-Side Request Forgery (SSRF)",@nuxt/icon,0,1.4.5,HIGH,CWE-918
+CVE-2024-42369,2024-08-20T18:35:27Z,"matrix-js-sdk will freeze when a user sets a room with itself as a its predecessor",matrix-js-sdk,0,34.3.1,MODERATE,CWE-674
 CVE-2024-42459,2024-08-02T09:31:35Z,"Elliptic's EDDSA missing signature length check",elliptic,4.0.0,6.5.7,LOW,CWE-347
 CVE-2024-42460,2024-08-02T09:31:35Z,"Elliptic's ECDSA missing check for whether leading bit of r and s is zero",elliptic,2.0.0,6.5.7,LOW,CWE-130
 CVE-2024-42461,2024-08-02T09:31:35Z,"Elliptic allows BER-encoded signatures",elliptic,5.2.1,6.5.7,LOW,CWE-347
 CVE-2024-43368,2024-08-14T18:11:53Z,"Trix has a cross-site Scripting vulnerability on copy & paste ",trix,0,2.1.4,MODERATE,CWE-79
 CVE-2024-43370,2024-08-15T18:06:50Z,"gettext.js has a Cross-site Scripting injection ",gettext.js,0,2.0.3,HIGH,CWE-79
 CVE-2024-43373,2024-08-14T18:01:06Z,"webcrack has an Arbitrary File Write Vulnerability on Windows when Parsing and Saving a Malicious Bundle",webcrack,0,2.14.1,HIGH,CWE-20;CWE-22
+CVE-2024-43407,2024-08-21T18:29:15Z,"Code Snippet GeSHi plugin has reflected cross-site scripting (XSS) vulnerability",ckeditor4-dev,0,4.25.0-lts,MODERATE,CWE-79
+CVE-2024-43409,2024-08-20T20:04:49Z,"Ghost's improper authentication allows access to member information and actions",@tryghost/portal,1.22.2,2.39.0,MODERATE,CWE-284
+CVE-2024-43409,2024-08-20T20:04:49Z,"Ghost's improper authentication allows access to member information and actions",ghost,4.46.0,5.89.5,MODERATE,CWE-284
+CVE-2024-43411,2024-08-21T18:31:00Z,"CKEditor4 low-risk cross-site scripting (XSS) vulnerability linked to potential domain takeover",ckeditor4,4.22.0,4.25.0,LOW,CWE-79
 CVE-2024-4367,2024-05-07T10:25:08Z,"PDF.js vulnerable to arbitrary JavaScript execution upon opening a malicious PDF",pdfjs-dist,0,4.2.67,HIGH,
+CVE-2024-43787,2024-08-22T16:41:08Z,"Hono CSRF middleware can be bypassed using crafted Content-Type header",hono,0,4.5.8,MODERATE,CWE-352
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6484,2024-07-11T18:31:14Z,"Bootstrap Cross-Site Scripting (XSS) vulnerability",bootstrap,2.0.0,,MODERATE,CWE-79
 CVE-2024-6531,2024-07-11T18:31:14Z,"Bootstrap Cross-Site Scripting (XSS) vulnerability",bootstrap,4.0.0,,MODERATE,CWE-79
