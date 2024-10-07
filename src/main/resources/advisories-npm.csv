@@ -303,8 +303,7 @@ CVE-2016-15025,2023-02-20T12:30:18Z,"generator-hottowel Cross-site Scripting vul
 CVE-2016-20018,2022-12-19T09:30:23Z,"Knex.js has a limited SQL injection vulnerability",knex,0,2.4.0,HIGH,CWE-89
 CVE-2016-2515,2018-07-31T22:52:00Z,"Regular Expression Denial of Service in hawk",hawk,0,3.1.3,HIGH,CWE-1333
 CVE-2016-2515,2018-07-31T22:52:00Z,"Regular Expression Denial of Service in hawk",hawk,4.0.0,4.1.1,HIGH,CWE-1333
-CVE-2016-2537,2017-10-24T18:33:35Z,"Regular Expression Denial of Service in is-my-json-valid",is-my-json-valid,0,1.4.1,HIGH,CWE-1333
-CVE-2016-2537,2017-10-24T18:33:35Z,"Regular Expression Denial of Service in is-my-json-valid",is-my-json-valid,2.0.0,2.17.2,HIGH,CWE-1333
+CVE-2016-2537,2017-10-24T18:33:35Z,"Regular Expression Denial of Service in is-my-json-valid",is-my-json-valid,0,2.17.2,HIGH,CWE-1333
 CVE-2016-3942,2020-09-01T15:24:24Z,"Template Injection in jsrender",jsrender,0,0.9.74,MODERATE,CWE-94
 CVE-2016-3956,2018-07-31T22:58:35Z,"npm Token Leak in npm",npm,0,2.15.1,HIGH,CWE-200
 CVE-2016-3956,2018-07-31T22:58:35Z,"npm Token Leak in npm",npm,3.0.0,3.8.3,HIGH,CWE-200
@@ -1908,10 +1907,10 @@ CVE-2021-41086,2021-09-22T20:39:26Z,"Clipboard-based XSS",jsuites,0,4.9.11,HIGH,
 CVE-2021-41097,2021-09-27T20:12:16Z,"Prototype pollution in aurelia-path",aurelia-path,0,1.1.7,CRITICAL,CWE-1321;CWE-915
 CVE-2021-41109,2021-09-30T17:09:47Z,"LiveQuery publishes user session tokens in parse-server",parse-server,0,4.10.4,HIGH,CWE-200
 CVE-2021-41117,2021-10-11T17:09:05Z,"Insecure random number generation in keypair",keypair,0,1.0.4,HIGH,CWE-335
-CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime,0,5.0.2,HIGH,CWE-79
-CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime,6.0.0,6.1.2,HIGH,CWE-79
-CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime-jupyterlab,0,1.0.1,HIGH,CWE-79
-CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime-jupyterlab,2.0.0,2.1.1,HIGH,CWE-79
+CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime,0,5.0.2,MODERATE,CWE-79
+CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime,6.0.0,6.1.2,MODERATE,CWE-79
+CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime-jupyterlab,0,1.0.1,MODERATE,CWE-79
+CVE-2021-41134,2021-11-08T18:09:27Z,"Stored XSS in Jupyter nbdime",nbdime-jupyterlab,2.0.0,2.1.1,MODERATE,CWE-79
 CVE-2021-41151,2021-10-19T15:28:03Z,"Path Traversal in @backstage/plugin-scaffolder-backend ","@backstage/plugin-scaffolder-backend",0.9.4,0.15.9,MODERATE,CWE-22
 CVE-2021-41164,2021-11-17T21:55:10Z,"Advanced Content Filter (ACF) vulnerability allowing to execute JavaScript code using malformed HTML",ckeditor4,0,4.17.0,HIGH,CWE-79
 CVE-2021-41165,2021-11-17T21:58:25Z,"HTML comments vulnerability allowing to execute JavaScript code",ckeditor4,0,4.17.0,HIGH,CWE-79
@@ -2353,7 +2352,8 @@ CVE-2022-35142,2022-08-05T00:00:23Z,"Raneto Denial of Service via crafted payloa
 CVE-2022-35143,2022-08-05T00:00:23Z,"Raneto v0.17.0 employs weak password complexity requirements",raneto,0,0.17.1,CRITICAL,CWE-521
 CVE-2022-35144,2022-08-05T00:00:23Z,"Raneto vulnerable to Cross-site Scripting",raneto,0,0.17.1,MODERATE,CWE-79
 CVE-2022-3517,2022-10-18T12:00:32Z,"minimatch ReDoS vulnerability",minimatch,0,3.0.5,HIGH,CWE-1333;CWE-400
-CVE-2022-35204,2022-08-19T00:00:20Z,"Vite before v2.9.13 vulnerable to directory traversal via crafted URL to victim's service",vite,0,2.9.13,MODERATE,CWE-22
+CVE-2022-35204,2022-08-19T00:00:20Z,"Vite before v2.9.13 vulnerable to directory traversal via crafted URL to victim's service",vite,0,2.9.13,HIGH,CWE-22
+CVE-2022-35204,2022-08-19T00:00:20Z,"Vite before v2.9.13 vulnerable to directory traversal via crafted URL to victim's service",vite,3.0.0-alpha.0,3.0.0-beta.4,HIGH,CWE-22
 CVE-2022-35513,2022-09-08T00:00:30Z,"Blink1Control2 uses weak password encryption",Blink1Control2,0,2.2.9,HIGH,CWE-326
 CVE-2022-35915,2022-08-14T00:23:34Z,"OpenZeppelin Contracts ERC165Checker unbounded gas consumption","@openzeppelin/contracts-upgradeable",3.2.0,4.7.2,MODERATE,CWE-400;CWE-770
 CVE-2022-35915,2022-08-14T00:23:34Z,"OpenZeppelin Contracts ERC165Checker unbounded gas consumption",@openzeppelin/contracts,2.0.0,4.7.2,MODERATE,CWE-400;CWE-770
@@ -2681,9 +2681,9 @@ CVE-2023-30846,2023-04-27T14:02:11Z,"Potential leak of authentication data to 3r
 CVE-2023-30857,2023-05-01T14:01:02Z,"Possible prototype pollution in metadata record, when using meta decorator",@aedart/support,0,0.6.1,LOW,CWE-1321
 CVE-2023-31125,2023-05-03T21:56:51Z,"engine.io Uncaught Exception vulnerability",engine.io,5.1.0,6.4.2,MODERATE,CWE-248
 CVE-2023-31133,2023-05-03T21:57:10Z,"Ghost vulnerable to information disclosure of private API fields",ghost,0,5.46.1,HIGH,CWE-200
-CVE-2023-31716,2023-09-22T00:30:29Z,"FUXA vulnerable to Local File Inclusion",@frangoteam/fuxa,0,,HIGH,
+CVE-2023-31716,2023-09-22T00:30:29Z,"FUXA vulnerable to Local File Inclusion",@frangoteam/fuxa,0,,HIGH,CWE-98
 CVE-2023-31717,2023-09-22T00:30:29Z,"FUXA SQL Injection vulnerability",fuxa-server,0,,HIGH,CWE-89
-CVE-2023-31718,2023-09-22T00:30:29Z,"FUXA local file inclusion vulnerability",fuxa-server,0,,HIGH,
+CVE-2023-31718,2023-09-22T00:30:29Z,"FUXA local file inclusion vulnerability",fuxa-server,0,,HIGH,CWE-98
 CVE-2023-31719,2023-09-22T00:30:29Z,"FUXA SQL Injection vulnerability",fuxa-server,0,,CRITICAL,CWE-89
 CVE-2023-31999,2023-07-05T21:36:56Z,"@fastify/oauth2 vulnerable to Cross Site Request Forgery due to reused Oauth2 state",@fastify/oauth2,0,7.2.0,HIGH,CWE-352
 CVE-2023-32235,2023-05-05T06:30:32Z,"Path Traversal in Ghost",ghost,0,5.42.1,HIGH,CWE-22
@@ -2745,7 +2745,7 @@ CVE-2023-3696,2023-07-17T03:30:20Z,"Mongoose Prototype Pollution vulnerability",
 CVE-2023-3696,2023-07-17T03:30:20Z,"Mongoose Prototype Pollution vulnerability",mongoose,6.0.0,6.11.3,CRITICAL,CWE-1321
 CVE-2023-3696,2023-07-17T03:30:20Z,"Mongoose Prototype Pollution vulnerability",mongoose,7.0.0,7.3.3,CRITICAL,CWE-1321
 CVE-2023-37259,2023-07-18T16:58:01Z,"matrix-react-sdk vulnerable to XSS in Export Chat feature",matrix-react-sdk,3.32.0,3.76.0,MODERATE,CWE-79;CWE-80
-CVE-2023-37263,2023-09-13T16:31:43Z,"Strapi's field level permissions not being respected in relationship title","@strapi/plugin-content-manager",0,4.12.1,MODERATE,CWE-200
+CVE-2023-37263,2023-09-13T16:31:43Z,"Strapi's field level permissions not being respected in relationship title","@strapi/plugin-content-manager",0,4.12.1,MODERATE,CWE-200;CWE-400
 CVE-2023-37298,2023-06-30T15:30:22Z,"Joplin Cross-site Scripting vulnerability",joplin,0,2.11.5,MODERATE,CWE-79
 CVE-2023-37299,2023-06-30T15:30:22Z,"Joplin Cross-site Scripting vulnerability",joplin,0,2.11.5,MODERATE,CWE-79
 CVE-2023-37466,2023-07-13T17:02:02Z,"vm2 Sandbox Escape vulnerability",vm2,0,,CRITICAL,CWE-94
@@ -2893,7 +2893,7 @@ CVE-2023-49276,2023-11-24T16:54:20Z,"Attribute Injection leading to XSS(Cross-Si
 CVE-2023-49293,2023-12-05T23:31:34Z,"Vite XSS vulnerability in `server.transformIndexHtml` via URL payload",vite,4.4.0,4.4.12,MODERATE,CWE-79
 CVE-2023-49293,2023-12-05T23:31:34Z,"Vite XSS vulnerability in `server.transformIndexHtml` via URL payload",vite,4.5.0,4.5.1,MODERATE,CWE-79
 CVE-2023-49293,2023-12-05T23:31:34Z,"Vite XSS vulnerability in `server.transformIndexHtml` via URL payload",vite,5.0.0,5.0.5,MODERATE,CWE-79
-CVE-2023-49583,2023-12-12T03:31:45Z,"Escalation of privileges in @sap/xssec",@sap/xssec,0,3.6.0,CRITICAL,CWE-269;CWE-639
+CVE-2023-49583,2023-12-12T03:31:45Z,"Escalation of privileges in @sap/xssec",@sap/xssec,0,3.6.0,CRITICAL,CWE-269;CWE-639;CWE-749
 CVE-2023-49781,2024-05-13T19:59:07Z,"NocoDB Vulnerable to Stored Cross-Site Scripting in Formula.vue",nocodb,0,0.202.9,HIGH,CWE-79
 CVE-2023-49785,2024-08-05T21:29:23Z,"NextChat has full-read SSRF and XSS vulnerability in /api/cors endpoint",nextchat,0,,CRITICAL,CWE-79;CWE-918
 CVE-2023-49798,2023-12-12T00:49:25Z,"OpenZeppelin Contracts and Contracts Upgradeable duplicated execution of subcalls in v4.9.4","@openzeppelin/contracts-upgradeable",4.9.4,4.9.5,MODERATE,CWE-670
@@ -2950,6 +2950,7 @@ CVE-2024-21484,2024-01-19T15:06:07Z,"Marvin Attack of RSA and RSAOAEP decryption
 CVE-2024-21485,2024-02-02T06:30:31Z,"Dash apps vulnerable to Cross-site Scripting",dash-core-components,0,2.13.0,MODERATE,CWE-79
 CVE-2024-21485,2024-02-02T06:30:31Z,"Dash apps vulnerable to Cross-site Scripting",dash-html-components,0,2.0.16,MODERATE,CWE-79
 CVE-2024-21488,2024-01-30T06:30:23Z,"network Arbitrary Command Injection vulnerability",network,0,0.7.0,HIGH,CWE-77
+CVE-2024-21489,2024-10-01T06:30:47Z,"uPlot Prototype Pollution vulnerability",uplot,0,1.6.31,HIGH,CWE-1321
 CVE-2024-21490,2024-02-10T06:30:19Z,"angular vulnerable to super-linear runtime due to backtracking",angular,1.3.0,,HIGH,CWE-1333
 CVE-2024-21501,2024-02-24T06:30:17Z,"sanitize-html Information Exposure vulnerability",sanitize-html,0,2.12.1,MODERATE,CWE-200;CWE-538
 CVE-2024-21505,2024-03-27T21:57:42Z,"web3-utils Prototype Pollution vulnerability",web3-utils,4.0.1,4.2.1,HIGH,CWE-1321
@@ -2966,6 +2967,7 @@ CVE-2024-21525,2024-07-10T06:33:52Z,"node-twain vulnerable to Improper Check or 
 CVE-2024-21526,2024-07-10T06:33:52Z,"speaker vulnerable to Denial of Service",speaker,0,,HIGH,CWE-241;CWE-400
 CVE-2024-21528,2024-09-10T06:30:48Z,"node-gettext vulnerable to Prototype Pollution",node-gettext,0,,MODERATE,CWE-1321
 CVE-2024-21529,2024-09-11T06:30:39Z,"dset Prototype Pollution vulnerability",dset,0,3.1.4,HIGH,CWE-1321
+CVE-2024-21531,2024-10-01T06:30:47Z,"git-shallow-clone OS Command Injection vulnerability",git-shallow-clone,0,,MODERATE,CWE-78
 CVE-2024-21668,2024-01-09T19:33:09Z,"react-native-mmkv Insertion of Sensitive Information into Log File vulnerability",react-native-mmkv,0,2.11.0,MODERATE,CWE-532
 CVE-2024-21908,2021-10-22T16:24:02Z,"Cross-site scripting vulnerability in TinyMCE",tinymce,0,5.9.0,MODERATE,CWE-79
 CVE-2024-21910,2021-11-02T15:42:52Z,"Cross-site scripting vulnerability in TinyMCE plugins",tinymce,0,5.10.0,MODERATE,CWE-64;CWE-79
@@ -3029,7 +3031,7 @@ CVE-2024-27926,2024-03-06T17:02:34Z,"RSSHub Cross-site Scripting vulnerability c
 CVE-2024-27927,2024-03-06T17:03:11Z,"RSSHub vulnerable to Server-Side Request Forgery",rsshub,0,1.0.0-master.a429472,MODERATE,CWE-918
 CVE-2024-28056,2024-04-15T18:30:51Z,"AWS Amplify CLI has incorrect trust policy management",@aws-amplify/cli,0,12.10.1,CRITICAL,CWE-269
 CVE-2024-28121,2024-03-12T15:44:49Z,"StimulusReflex arbitrary method call",stimulus_reflex,0,3.4.2,HIGH,CWE-470
-CVE-2024-28121,2024-03-12T15:44:49Z,"StimulusReflex arbitrary method call",stimulus_reflex,3.5.0.pre0,3.5.0.rc4,HIGH,CWE-470
+CVE-2024-28121,2024-03-12T15:44:49Z,"StimulusReflex arbitrary method call",stimulus_reflex,3.5.0-pre0,3.5.0-rc4,HIGH,CWE-470
 CVE-2024-28176,2024-03-07T17:40:57Z,"jose vulnerable to resource exhaustion via specifically crafted JWE with compressed plaintext",jose,0,2.0.7,MODERATE,CWE-400
 CVE-2024-28176,2024-03-07T17:40:57Z,"jose vulnerable to resource exhaustion via specifically crafted JWE with compressed plaintext",jose,3.0.0,4.15.5,MODERATE,CWE-400
 CVE-2024-28176,2024-03-07T17:40:57Z,"jose vulnerable to resource exhaustion via specifically crafted JWE with compressed plaintext",jose-node-cjs-runtime,0,4.15.5,MODERATE,CWE-400
@@ -3330,6 +3332,7 @@ CVE-2024-43414,2024-08-27T18:14:12Z,"Apollo Query Planner and Apollo Gateway may
 CVE-2024-4367,2024-05-07T10:25:08Z,"PDF.js vulnerable to arbitrary JavaScript execution upon opening a malicious PDF",pdfjs-dist,0,4.2.67,HIGH,
 CVE-2024-43787,2024-08-22T16:41:08Z,"Hono CSRF middleware can be bypassed using crafted Content-Type header",hono,0,4.5.8,MODERATE,CWE-352
 CVE-2024-43788,2024-08-27T19:50:40Z,"Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS",webpack,5.0.0-alpha.0,5.94.0,MODERATE,CWE-79
+CVE-2024-43795,2024-10-02T19:29:23Z,"OpenC3 Cross-site Scripting in Login functionality (`GHSL-2024-128`)",@openc3/tool-common,0,5.19.0,MODERATE,CWE-79
 CVE-2024-43796,2024-09-10T19:41:04Z,"express vulnerable to XSS via response.redirect()",express,0,4.20.0,MODERATE,CWE-79
 CVE-2024-43796,2024-09-10T19:41:04Z,"express vulnerable to XSS via response.redirect()",express,5.0.0-alpha.1,5.0.0,MODERATE,CWE-79
 CVE-2024-43799,2024-09-10T19:42:41Z,"send vulnerable to template injection that can lead to XSS",send,0,0.19.0,MODERATE,CWE-79
@@ -3353,6 +3356,8 @@ CVE-2024-45596,2024-09-10T19:43:00Z,"Session is cached for OpenID and OAuth2 if 
 CVE-2024-45596,2024-09-10T19:43:00Z,"Session is cached for OpenID and OAuth2 if `redirect` is not used",directus,0,10.13.3,HIGH,CWE-384;CWE-524
 CVE-2024-45596,2024-09-10T19:43:00Z,"Session is cached for OpenID and OAuth2 if `redirect` is not used",directus,11.0.0-rc.1,11.1.0,HIGH,CWE-384;CWE-524
 CVE-2024-45607,2024-09-12T21:29:17Z,"whatsapp-api-js fails to validate message's signature",whatsapp-api-js,4.0.0,4.0.3,MODERATE,CWE-347
+CVE-2024-45613,2024-09-25T18:13:35Z,"Cross-site scripting (XSS) in the clipboard package","@ckeditor/ckeditor5-clipboard",40.0.0,43.1.1,MODERATE,CWE-79
+CVE-2024-45613,2024-09-25T18:13:35Z,"Cross-site scripting (XSS) in the clipboard package",ckeditor5,40.0.0,43.1.1,MODERATE,CWE-79
 CVE-2024-45801,2024-09-16T20:34:26Z,"DOMPurify allows tampering by prototype pollution",dompurify,0,2.5.4,HIGH,CWE-1321;CWE-1333
 CVE-2024-45801,2024-09-16T20:34:26Z,"DOMPurify allows tampering by prototype pollution",dompurify,3.0.0,3.1.3,HIGH,CWE-1321;CWE-1333
 CVE-2024-45811,2024-09-17T18:44:12Z,"Vite's `server.fs.deny` is bypassed when using `?import&raw`",vite,0,3.2.11,MODERATE,CWE-200;CWE-284
@@ -3372,6 +3377,9 @@ CVE-2024-45813,2024-09-18T15:52:33Z,"find-my-way has a ReDoS vulnerability in mu
 CVE-2024-45815,2024-09-17T21:29:49Z,"@backstage/plugin-catalog-backend Prototype Pollution vulnerability","@backstage/plugin-catalog-backend",0,1.26.0,MODERATE,CWE-1321
 CVE-2024-45816,2024-09-17T21:30:20Z,"@backstage/plugin-techdocs-backend storage bucket Directory Traversal vulnerability","@backstage/plugin-techdocs-backend",0,1.10.13,MODERATE,CWE-23
 CVE-2024-45835,2024-09-16T15:32:46Z,"Mattermost Desktop App fails to sufficiently configure Electron Fuses",mattermost-desktop,0,5.9.0,LOW,CWE-693
+CVE-2024-46488,2024-09-25T18:31:21Z,"Heap-based Buffer Overflow in sqlite-vec",sqlite-vec,0,0.1.3,HIGH,CWE-122;CWE-787
+CVE-2024-46489,2024-09-25T18:31:21Z,"Remote command execution in promptr",@ifnotnowwhen/promptr,0,,HIGH,CWE-94
+CVE-2024-46935,2024-09-25T03:30:36Z,"Denial of service in rocket chat message parser","@rocket.chat/message-parser",0,0.31.30,MODERATE,CWE-400
 CVE-2024-46976,2024-09-17T21:31:28Z,"@backstage/plugin-techdocs-backend vulnerable to circumvention of cross site scripting protection","@backstage/plugin-techdocs-backend",0,1.10.13,MODERATE,CWE-693;CWE-79
 CVE-2024-46982,2024-09-17T21:58:09Z,"Next.js Cache Poisoning",next,13.5.1,13.5.7,HIGH,CWE-349;CWE-639
 CVE-2024-46982,2024-09-17T21:58:09Z,"Next.js Cache Poisoning",next,14.0.0,14.2.10,HIGH,CWE-349;CWE-639
@@ -3382,6 +3390,20 @@ CVE-2024-46990,2024-09-18T17:42:05Z,"Directus vulnerable to SSRF Loopback IP fil
 CVE-2024-47061,2024-09-20T14:41:02Z,"Plate allows arbitrary DOM attributes in element.attributes and leaf.attributes",@udecode/plate-core,0,21.5.1,HIGH,CWE-79
 CVE-2024-47061,2024-09-20T14:41:02Z,"Plate allows arbitrary DOM attributes in element.attributes and leaf.attributes",@udecode/plate-core,22.0.0,36.5.9,HIGH,CWE-79
 CVE-2024-47061,2024-09-20T14:41:02Z,"Plate allows arbitrary DOM attributes in element.attributes and leaf.attributes",@udecode/plate-core,37.0.0,38.0.6,HIGH,CWE-79
+CVE-2024-47066,2024-09-23T20:30:11Z,"lobe-chat implemented an insufficient fix for GHSA-mxhq-xw3g-rphc (CVE-2024-32964)",@lobehub/chat,0,1.19.13,MODERATE,CWE-918
+CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",rollup,0,2.79.2,HIGH,CWE-79
+CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",rollup,3.0.0,3.29.5,HIGH,CWE-79
+CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",rollup,4.0.0,4.22.4,HIGH,CWE-79
+CVE-2024-47075,2024-09-26T17:54:24Z,"Layui has DOM Clobbering gadgets that leads to Cross-site Scripting",layui,0,2.9.17,MODERATE,CWE-79
+CVE-2024-47169,2024-09-26T18:05:12Z,"Agnai vulnerable to Remote Code Execution via JS Upload using Directory Traversal",agnai,0,1.0.330,CRITICAL,CWE-22;CWE-35;CWE-434
+CVE-2024-47170,2024-09-26T18:07:52Z,"Agnai File Disclosure Vulnerability: JSON via Path Traversal ",agnai,0,1.0.330,LOW,CWE-22;CWE-35
+CVE-2024-47171,2024-09-26T18:16:13Z,"Agnai vulnerable to Relative Path Traversal in Image Upload",agnai,0,1.0.330,LOW,CWE-22;CWE-35
+CVE-2024-47178,2024-09-30T17:48:29Z,"basic-auth-connect's callback uses time unsafe string comparison",basic-auth-connect,0,1.1.0,HIGH,CWE-208
+CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,0,6.5.9,HIGH,CWE-285
+CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,7.0.0,7.3.0,HIGH,CWE-285
+CVE-2024-47529,2024-10-02T19:29:35Z,"OpenC3 stores passwords in clear text (`GHSL-2024-129`)",@openc3/tool-common,0,5.19.0,MODERATE,CWE-312;CWE-522
+CVE-2024-47762,2024-10-03T16:51:24Z,"Unexpected visibility of environment variable configurations in @backstage/plugin-app-backend","@backstage/plugin-app-backend",0,0.3.75,MODERATE,CWE-440
+CVE-2024-47764,2024-10-04T20:31:00Z,"cookie accepts cookie name, path, and domain with out of bounds characters",cookie,0,0.7.0,LOW,CWE-74
 CVE-2024-5389,2024-06-10T00:30:39Z,"lunary-ai/lunary Access Control Vulnerability in Prompt Variation Management",lunary,0,1.4.9,CRITICAL,CWE-1220
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6087,2024-09-13T18:31:48Z,"Lunary improper access control vulnerability",lunary,0,1.4.9,MODERATE,CWE-284
@@ -3398,6 +3420,8 @@ CVE-2024-8181,2024-08-27T15:32:49Z,"Flowise Authentication Bypass vulnerability"
 CVE-2024-8182,2024-08-27T15:32:51Z,"Flowise Unauthenticated Denial of Service (DoS) vulnerability",flowise,0,,HIGH,CWE-400
 CVE-2024-8372,2024-09-09T15:30:41Z,"AngularJS allows attackers to bypass common image source restrictions",angular,1.3.0-rc.4,,LOW,CWE-1289
 CVE-2024-8373,2024-09-09T15:30:41Z,"AngularJS allows attackers to bypass common image source restrictions",angular,0,,LOW,CWE-791
+CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to Stored Cross-site Scripting",flowise,0,2.1.1,MODERATE,CWE-79
+CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to Stored Cross-site Scripting",flowise-embed,0,2.0.0,MODERATE,CWE-79
 GHSA-224h-p7p5-rh85,2020-09-01T17:32:26Z,"Directory Traversal in wenluhong1",wenluhong1,0.0.0,,HIGH,CWE-22
 GHSA-226w-6hhj-69hp,2020-09-03T19:06:52Z,"Malicious Package in cal_rd",cal_rd,0.0.0,,CRITICAL,CWE-506
 GHSA-22h7-7wwg-qmgg,2020-09-04T17:56:39Z,"Prototype Pollution in @hapi/hoek",@hapi/hoek,8.3.2,8.5.1,LOW,CWE-1321
@@ -3411,6 +3435,7 @@ GHSA-255r-pghp-r5wh,2020-09-03T17:05:34Z,"Malicious Package in hdeky",hdeky,0.0.
 GHSA-2563-83p7-f34p,2020-09-02T20:24:41Z,"Malicious Package in requestt",requestt,0,,CRITICAL,CWE-506
 GHSA-25v4-mcx4-hh35,2020-09-04T17:28:28Z,"Cross-Site Scripting in atlasboard-atlassian-package","atlasboard-atlassian-package",0.0.0,,HIGH,CWE-79
 GHSA-26hg-crh6-mjrw,2021-02-23T21:28:28Z,"Directory Traversal",list-n-stream,0,0.0.11,HIGH,
+GHSA-277h-px4m-62q8,2024-10-03T19:46:12Z,"@saltcorn/server arbitrary file zip read and download when downloading auto backups",@saltcorn/server,0,1.0.0-beta.14,MODERATE,CWE-22
 GHSA-277p-xwpp-3jf7,2020-09-02T15:49:22Z,"Malicious Package in rrgod",rrgod,0.0.0,,CRITICAL,CWE-506
 GHSA-27v7-qhfv-rqq8,2019-05-30T17:26:30Z,"Insecure Credential Storage in web3",web3,0,,LOW,
 GHSA-28f4-mjfq-qrvf,2020-09-03T22:18:40Z,"Malicious Package in buffes-xor",buffes-xor,0.0.0,,CRITICAL,CWE-506
@@ -3541,6 +3566,8 @@ GHSA-56x4-j7p9-fcf9,2022-08-30T20:31:21Z,"Command Injection in moment-timezone",
 GHSA-57cf-349j-352g,2019-06-12T16:37:00Z,"Out-of-bounds Read in npmconf",npmconf,0,2.1.3,MODERATE,CWE-125
 GHSA-5854-jvxx-2cg9,2020-09-03T15:46:57Z,"Denial of Service in subtext",subtext,4.1.0,,HIGH,
 GHSA-588m-9qg5-35pq,2020-09-03T17:19:09Z,"Reverse Tabnabbing in quill",quill,0,1.3.7,MODERATE,CWE-1022
+GHSA-593m-55hh-j8gv,2024-10-03T18:26:53Z,"Sentry SDK Prototype Pollution gadget in JavaScript SDKs",@sentry/browser,0,7.119.1,MODERATE,CWE-913
+GHSA-593m-55hh-j8gv,2024-10-03T18:26:53Z,"Sentry SDK Prototype Pollution gadget in JavaScript SDKs",@sentry/browser,8.0.0-alpha.1,8.33.0,MODERATE,CWE-913
 GHSA-593v-wcqx-hq2w,2021-09-07T22:57:58Z,"Incorrect version tags linked to external repository",parse-server,4.0.0,4.5.2,CRITICAL,
 GHSA-593v-wcqx-hq2w,2021-09-07T22:57:58Z,"Incorrect version tags linked to external repository",parse-server,4.6.0,4.10.0,CRITICAL,
 GHSA-5947-m4fg-xhqg,2020-09-03T18:08:10Z,"Prototype Pollution in lodash.mergewith",lodash.mergewith,0,4.6.1,HIGH,CWE-1321
@@ -3640,6 +3667,7 @@ GHSA-76xq-58hj-vwm2,2020-09-11T21:16:59Z,"Malicious Package in test-module-a",te
 GHSA-779f-wgxg-qr8f,2020-09-03T18:10:22Z,"Prototype Pollution in lodash.mergewith",lodash.mergewith,0,4.6.2,HIGH,CWE-1321
 GHSA-785g-gx74-gr39,2020-09-03T23:12:48Z,"Malicious Package in js-wha3",js-wha3,0.0.0,,CRITICAL,CWE-506
 GHSA-788m-pj96-7w2c,2020-09-02T21:23:51Z,"Cross-Site Scripting in fomantic-ui",fomantic-ui,0,2.7.0,HIGH,CWE-79
+GHSA-78p3-fwcq-62c2,2024-10-03T19:50:59Z,"@saltcorn/server Remote Code Execution (RCE) / SQL injection via prototype pollution  by manipulating `lang` and  `defstring` parameters when setting localizer strings",@saltcorn/server,0,1.0.0-beta.14,HIGH,CWE-1321
 GHSA-7cg8-pq9v-x98q,2019-10-21T21:58:55Z,"Sandbox Breakout in realms-shim",realms-shim,0,1.2.1,CRITICAL,
 GHSA-7cgc-fjv4-52x6,2023-05-24T16:43:58Z,"Malware in pre-build binaries of bignum",bignum,0.12.2,0.13.1,CRITICAL,CWE-506
 GHSA-7cvf-p83w-48q6,2020-09-03T21:37:29Z,"Malicious Package in beffer-xor",beffer-xor,0.0.0,,CRITICAL,CWE-506
@@ -3802,6 +3830,7 @@ GHSA-ccq6-3qx5-vmqx,2018-07-31T22:54:14Z,"Moderate severity vulnerability that a
 GHSA-ccrp-c664-8p4j,2020-09-03T21:17:36Z,"Cross-Site Scripting in markdown-to-jsx",markdown-to-jsx,0,6.11.4,HIGH,CWE-79
 GHSA-cfc5-x58f-869w,2020-09-03T19:40:55Z,"Malicious Package in conistring",conistring,0.0.0,,CRITICAL,CWE-506
 GHSA-cff4-rrq6-h78w,2019-06-03T17:31:26Z,"Command Injection in command-exists",command-exists,0,1.2.4,CRITICAL,CWE-77
+GHSA-cfqx-f43m-vfh7,2024-10-03T19:46:42Z,"@saltcorn/server arbitrary file and directory listing when accessing build mobile app results",@saltcorn/server,0,1.0.0-beta.14,MODERATE,CWE-548
 GHSA-cfwc-xjfp-44jg,2020-09-04T17:19:48Z,"Command Injection in gnuplot",gnuplot,0.0.0,,CRITICAL,CWE-77
 GHSA-cfxh-frx4-9gjg,2023-12-15T03:13:18Z,"Cross-site Scripting in @spscommerce/ds-react",@spscommerce/ds-react,4.12.2,7.17.4,CRITICAL,CWE-79
 GHSA-cg48-9hh2-x6mx,2020-09-02T18:28:58Z,"HTML Injection in preact",preact,10.0.0-alpha.0,10.0.0-beta.1,MODERATE,CWE-74
@@ -3853,6 +3882,7 @@ GHSA-ff6g-gm92-rf32,2020-09-03T19:42:06Z,"Malicious Package in coinstirng",coins
 GHSA-fgp6-8g62-qx6w,2020-09-03T17:01:45Z,"Malicious Package in smartsearchwp",smartsearchwp,0,,CRITICAL,CWE-506
 GHSA-fj93-7wm4-8x2g,2020-09-02T21:22:47Z,"Cross-Site Scripting in jquery-mobile",jquery-mobile,0,,HIGH,CWE-79
 GHSA-fm4j-4xhm-xpwx,2020-09-02T15:51:34Z,"Sandbox Breakout / Arbitrary Code Execution in sandbox",sandbox,0.0.0,,MODERATE,
+GHSA-fm76-w8jw-xf8m,2024-10-03T22:21:24Z,"@saltcorn/plugins-loader unsanitized plugin name leads to a remote code execution (RCE) vulnerability when creating plugins using git source",@saltcorn/plugins-loader,0,1.0.0-beta.14,HIGH,CWE-78
 GHSA-fm7r-2pr7-rw2p,2020-09-02T21:45:02Z,"Malicious Package in yeoman-genrator",yeoman-genrator,0,,CRITICAL,CWE-506
 GHSA-fmr4-7g9q-7hc7,2017-10-24T18:33:36Z,"Moderate severity vulnerability that affects handlebars",handlebars,0,4.0.0,MODERATE,
 GHSA-fpf2-pr3j-4cm3,2020-09-03T17:06:06Z,"Malicious Package in ecruve",ecruve,0.0.0,,CRITICAL,CWE-506
