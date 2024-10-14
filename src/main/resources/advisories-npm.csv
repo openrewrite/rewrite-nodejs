@@ -1308,7 +1308,7 @@ CVE-2020-7651,2020-06-03T22:02:11Z,"Arbitrary File Read in Snyk Broker",snyk-bro
 CVE-2020-7652,2020-06-03T22:02:24Z,"Arbitrary File Read in Snyk Broker",snyk-broker,0,4.80.0,MODERATE,CWE-22
 CVE-2020-7653,2020-06-03T22:02:21Z,"Arbitrary File Read in Snyk Broker",snyk-broker,0,4.80.0,MODERATE,CWE-59
 CVE-2020-7654,2020-06-03T22:02:14Z,"Information Exposure in Snyk Broker",snyk-broker,0,4.73.1,HIGH,CWE-532
-CVE-2020-7656,2020-05-20T16:18:01Z,"Cross-Site Scripting in jquery",jquery,0,1.9.0,MODERATE,CWE-79
+CVE-2020-7656,2020-05-20T16:18:01Z,"Cross-Site Scripting in jquery",jquery,1.2.1,1.9.0,MODERATE,CWE-79
 CVE-2020-7660,2020-08-11T17:21:13Z,"Insecure serialization leading to RCE in serialize-javascript",serialize-javascript,0,3.1.0,HIGH,CWE-502
 CVE-2020-7661,2020-06-22T14:39:03Z,"Regular expression denial of service in url-regex",url-regex,0,,HIGH,CWE-400
 CVE-2020-7662,2020-06-05T16:16:12Z,"Regular Expression Denial of Service in websocket-extensions (NPM package)",websocket-extensions,0,0.1.4,HIGH,CWE-400
@@ -2968,6 +2968,8 @@ CVE-2024-21526,2024-07-10T06:33:52Z,"speaker vulnerable to Denial of Service",sp
 CVE-2024-21528,2024-09-10T06:30:48Z,"node-gettext vulnerable to Prototype Pollution",node-gettext,0,,MODERATE,CWE-1321
 CVE-2024-21529,2024-09-11T06:30:39Z,"dset Prototype Pollution vulnerability",dset,0,3.1.4,HIGH,CWE-1321
 CVE-2024-21531,2024-10-01T06:30:47Z,"git-shallow-clone OS Command Injection vulnerability",git-shallow-clone,0,,MODERATE,CWE-78
+CVE-2024-21532,2024-10-08T06:30:47Z,"ggit is vulnerable to Command Injection via the fetchTags(branch) API",ggit,0,,MODERATE,CWE-78
+CVE-2024-21533,2024-10-08T06:30:48Z,"ggit is vulnerable to Arbitrary Argument Injection via the clone() API",ggit,0,,MODERATE,CWE-88
 CVE-2024-21668,2024-01-09T19:33:09Z,"react-native-mmkv Insertion of Sensitive Information into Log File vulnerability",react-native-mmkv,0,2.11.0,MODERATE,CWE-532
 CVE-2024-21908,2021-10-22T16:24:02Z,"Cross-site scripting vulnerability in TinyMCE",tinymce,0,5.9.0,MODERATE,CWE-79
 CVE-2024-21910,2021-11-02T15:42:52Z,"Cross-site scripting vulnerability in TinyMCE plugins",tinymce,0,5.10.0,MODERATE,CWE-64;CWE-79
@@ -3310,7 +3312,7 @@ CVE-2024-4128,2024-05-02T15:30:35Z,"Firebase vulnerable to CRSF attack",firebase
 CVE-2024-4146,2024-06-08T21:30:38Z,"lunary-ai/lunary allows users unauthorized access to projects",lunary,0,1.2.26,CRITICAL,CWE-285;CWE-863
 CVE-2024-41655,2024-07-23T14:10:45Z,"(ReDoS) Regular Expression Denial of Service in tf2-item-format",tf2-item-format,4.2.6,5.9.14,HIGH,CWE-1333;CWE-624
 CVE-2024-41677,2024-08-06T18:24:47Z,"Qwik has a potential mXSS vulnerability due to improper HTML escaping",@builder.io/qwik,0,1.7.3,MODERATE,CWE-79
-CVE-2024-41818,2024-07-29T17:46:16Z,"fast-xml-parser vulnerable to ReDOS at currency parsing",fast-xml-parser,0,4.4.1,HIGH,CWE-1333;CWE-400
+CVE-2024-41818,2024-07-29T17:46:16Z,"fast-xml-parser vulnerable to ReDOS at currency parsing",fast-xml-parser,4.3.5,4.4.1,HIGH,CWE-1333;CWE-400
 CVE-2024-41945,2024-07-30T21:13:42Z,"The fuels-ts typescript SDK has no awareness of to-be-spent transactions",@fuel-ts/account,0,0.93.0,LOW,CWE-20
 CVE-2024-41962,2024-08-02T01:20:13Z,"Bostr Improper Authorization vulnerability",bostr,0,3.0.10,MODERATE,CWE-285
 CVE-2024-42347,2024-08-06T14:12:45Z,"Matrix SDK for React's URL preview setting for a room is controllable by the homeserver",matrix-react-sdk,0,3.105.1,MODERATE,CWE-359
@@ -3320,6 +3322,7 @@ CVE-2024-42459,2024-08-02T09:31:35Z,"Elliptic's EDDSA missing signature length c
 CVE-2024-42460,2024-08-02T09:31:35Z,"Elliptic's ECDSA missing check for whether leading bit of r and s is zero",elliptic,2.0.0,6.5.7,LOW,CWE-130
 CVE-2024-42461,2024-08-02T09:31:35Z,"Elliptic allows BER-encoded signatures",elliptic,5.2.1,6.5.7,LOW,CWE-347
 CVE-2024-42471,2024-09-03T20:08:30Z,"@actions/artifact has an Arbitrary File Write via artifact extraction",@actions/artifact,2.0.0,2.1.7,HIGH,CWE-22
+CVE-2024-42640,2024-10-11T18:32:49Z,"angular-base64-upload vulnerable to unauthenticated remote code execution",angular-base64-upload,0,0.1.21,CRITICAL,CWE-434
 CVE-2024-43368,2024-08-14T18:11:53Z,"Trix has a cross-site Scripting vulnerability on copy & paste ",trix,0,2.1.4,MODERATE,CWE-79
 CVE-2024-43370,2024-08-15T18:06:50Z,"gettext.js has a Cross-site Scripting injection ",gettext.js,0,2.0.3,HIGH,CWE-79
 CVE-2024-43373,2024-08-14T18:01:06Z,"webcrack has an Arbitrary File Write Vulnerability on Windows when Parsing and Saving a Malicious Bundle",webcrack,0,2.14.1,HIGH,CWE-20;CWE-22
@@ -3340,6 +3343,7 @@ CVE-2024-43800,2024-09-10T19:42:33Z,"serve-static vulnerable to template injecti
 CVE-2024-43800,2024-09-10T19:42:33Z,"serve-static vulnerable to template injection that can lead to XSS",serve-static,2.0.0,2.1.0,MODERATE,CWE-79
 CVE-2024-45037,2024-08-27T19:53:21Z,"AWS CDK RestApi not generating authorizationScope correctly in resultant CFN template",aws-cdk,2.142.0,2.148.1,MODERATE,CWE-863
 CVE-2024-45047,2024-08-30T16:49:10Z,"Svelte has a potential mXSS vulnerability due to improper HTML escaping",svelte,0,4.2.19,MODERATE,CWE-79
+CVE-2024-45277,2024-10-08T06:30:47Z,"SAP HANA Node.js client package vulnerable to Prototype Pollution",@sap/hana-client,2.0.0,2.21.31,MODERATE,CWE-1321
 CVE-2024-45296,2024-09-09T20:19:15Z,"path-to-regexp outputs backtracking regular expressions",path-to-regexp,0,0.1.10,HIGH,CWE-1333
 CVE-2024-45296,2024-09-09T20:19:15Z,"path-to-regexp outputs backtracking regular expressions",path-to-regexp,0.2.0,1.9.0,HIGH,CWE-1333
 CVE-2024-45296,2024-09-09T20:19:15Z,"path-to-regexp outputs backtracking regular expressions",path-to-regexp,2.0.0,3.3.0,HIGH,CWE-1333
@@ -3372,7 +3376,7 @@ CVE-2024-45812,2024-09-17T19:28:01Z,"Vite DOM Clobbering gadget found in vite bu
 CVE-2024-45812,2024-09-17T19:28:01Z,"Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",vite,5.2.0,5.2.14,MODERATE,CWE-79
 CVE-2024-45812,2024-09-17T19:28:01Z,"Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",vite,5.3.0,5.3.6,MODERATE,CWE-79
 CVE-2024-45812,2024-09-17T19:28:01Z,"Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",vite,5.4.0,5.4.6,MODERATE,CWE-79
-CVE-2024-45813,2024-09-18T15:52:33Z,"find-my-way has a ReDoS vulnerability in multiparametric routes",find-my-way,0,8.2.2,HIGH,CWE-1333
+CVE-2024-45813,2024-09-18T15:52:33Z,"find-my-way has a ReDoS vulnerability in multiparametric routes",find-my-way,5.5.0,8.2.2,HIGH,CWE-1333
 CVE-2024-45813,2024-09-18T15:52:33Z,"find-my-way has a ReDoS vulnerability in multiparametric routes",find-my-way,9.0.0,9.0.1,HIGH,CWE-1333
 CVE-2024-45815,2024-09-17T21:29:49Z,"@backstage/plugin-catalog-backend Prototype Pollution vulnerability","@backstage/plugin-catalog-backend",0,1.26.0,MODERATE,CWE-1321
 CVE-2024-45816,2024-09-17T21:30:20Z,"@backstage/plugin-techdocs-backend storage bucket Directory Traversal vulnerability","@backstage/plugin-techdocs-backend",0,1.10.13,MODERATE,CWE-23
@@ -3404,6 +3408,10 @@ CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to a
 CVE-2024-47529,2024-10-02T19:29:35Z,"OpenC3 stores passwords in clear text (`GHSL-2024-129`)",@openc3/tool-common,0,5.19.0,MODERATE,CWE-312;CWE-522
 CVE-2024-47762,2024-10-03T16:51:24Z,"Unexpected visibility of environment variable configurations in @backstage/plugin-app-backend","@backstage/plugin-app-backend",0,0.3.75,MODERATE,CWE-440
 CVE-2024-47764,2024-10-04T20:31:00Z,"cookie accepts cookie name, path, and domain with out of bounds characters",cookie,0,0.7.0,LOW,CWE-74
+CVE-2024-47818,2024-10-07T15:10:52Z,"Saltcorn Server allows logged-in users to delete arbitrary files because of a path traversal vulnerability",@saltcorn/server,0,1.0.0-beta.16,HIGH,CWE-22
+CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,0,2.5.0,HIGH,CWE-79
+CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,3.0.0,3.1.3,HIGH,CWE-79
+CVE-2024-48949,2024-10-10T03:30:44Z,"Elliptic's verify function omits validation",elliptic,0,6.5.6,LOW,CWE-347
 CVE-2024-5389,2024-06-10T00:30:39Z,"lunary-ai/lunary Access Control Vulnerability in Prompt Variation Management",lunary,0,1.4.9,CRITICAL,CWE-1220
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6087,2024-09-13T18:31:48Z,"Lunary improper access control vulnerability",lunary,0,1.4.9,MODERATE,CWE-284
@@ -3422,6 +3430,9 @@ CVE-2024-8372,2024-09-09T15:30:41Z,"AngularJS allows attackers to bypass common 
 CVE-2024-8373,2024-09-09T15:30:41Z,"AngularJS allows attackers to bypass common image source restrictions",angular,0,,LOW,CWE-791
 CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to Stored Cross-site Scripting",flowise,0,2.1.1,MODERATE,CWE-79
 CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to Stored Cross-site Scripting",flowise-embed,0,2.0.0,MODERATE,CWE-79
+CVE-2024-9266,2024-10-03T21:31:05Z,"Express Open Redirect vulnerability",express,3.4.5,4.0.0-rc1,LOW,CWE-601
+CVE-2024-9283,2024-09-27T15:30:35Z,"ReLaXed Cross-site Scripting vulnerability",relaxedjs,0,,LOW,CWE-79
+CVE-2024-9440,2024-10-02T21:30:34Z,"Slim Select has potential Cross-site Scripting issue",slim-select,2.0.0,,LOW,CWE-79
 GHSA-224h-p7p5-rh85,2020-09-01T17:32:26Z,"Directory Traversal in wenluhong1",wenluhong1,0.0.0,,HIGH,CWE-22
 GHSA-226w-6hhj-69hp,2020-09-03T19:06:52Z,"Malicious Package in cal_rd",cal_rd,0.0.0,,CRITICAL,CWE-506
 GHSA-22h7-7wwg-qmgg,2020-09-04T17:56:39Z,"Prototype Pollution in @hapi/hoek",@hapi/hoek,8.3.2,8.5.1,LOW,CWE-1321
@@ -4099,6 +4110,7 @@ GHSA-p9g3-vpvp-hcj5,2020-09-03T21:41:55Z,"Malicious Package in bufber-xor",bufbe
 GHSA-p9vv-3945-x93h,2020-09-02T15:47:10Z,"Cross-Site Scripting in semantic-ui-search",semantic-ui-search,0,,HIGH,CWE-79
 GHSA-pc5p-h8pf-mvwp,2020-04-16T03:14:56Z,"Machine-In-The-Middle in https-proxy-agent",https-proxy-agent,0,2.2.3,MODERATE,CWE-300
 GHSA-pc7q-c837-3wjq,2020-09-03T17:02:58Z,"Malicious Package in wallet-address-validtaor",wallet-address-validtaor,0.0.0,,CRITICAL,CWE-506
+GHSA-pf56-h9qf-rxq4,2024-10-07T15:14:40Z,"Saltcorn Server Stored Cross-Site Scripting (XSS) in event logs page",@saltcorn/server,0,1.0.0-beta.16,MODERATE,CWE-79
 GHSA-pg98-6v7f-2xfv,2022-11-23T15:44:52Z,"sweetalert2 v9.17.4 and above contains hidden functionality",sweetalert2,9.17.4,,LOW,CWE-912
 GHSA-pgcr-7wm4-mcv6,2019-06-04T15:42:45Z,"Sensitive Data Exposure in pem",pem,0,1.13.2,CRITICAL,CWE-200
 GHSA-pgr8-jg6h-8gw6,2019-05-23T09:26:20Z,"Cross-Site Scripting in webpack-bundle-analyzer",webpack-bundle-analyzer,0,3.3.2,MODERATE,CWE-79
