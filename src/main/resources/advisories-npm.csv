@@ -331,7 +331,7 @@ CVE-2017-1000170,2022-05-13T01:11:22Z,"jqueryFileTree vulnerable to Directory Tr
 CVE-2017-1000188,2017-11-30T23:15:05Z,"mde ejs vulnerable to XSS",ejs,0,2.5.5,MODERATE,CWE-79
 CVE-2017-1000189,2018-03-05T18:54:33Z,"ejs vulnerable to DoS due to weak input validation",ejs,0,2.5.5,HIGH,CWE-20
 CVE-2017-1000219,2020-09-01T16:43:55Z,"Command Execution in windows-cpu",windows-cpu,0,0.1.5,CRITICAL,CWE-78
-CVE-2017-1000220,2022-05-13T01:41:00Z,"PIDUsage Enables OS Command Injection",pidusage,0,,CRITICAL,CWE-78
+CVE-2017-1000220,2022-05-13T01:41:00Z,"PIDUsage Enables OS Command Injection",pidusage,0,1.1.5,CRITICAL,CWE-78
 CVE-2017-1000228,2017-11-30T23:15:19Z,"ejs is vulnerable to remote code execution due to weak input validation",ejs,0,2.5.5,CRITICAL,CWE-20
 CVE-2017-1000424,2022-05-13T01:41:15Z,"Electron vulnerable to URL spoofing via PDFium",electron,1.7.0,1.7.6,MODERATE,CWE-290;CWE-345
 CVE-2017-1000427,2018-01-04T21:04:19Z,"Marked vulnerable to XSS from data URIs",marked,0,0.3.7,MODERATE,CWE-79
@@ -2970,6 +2970,8 @@ CVE-2024-21529,2024-09-11T06:30:39Z,"dset Prototype Pollution vulnerability",dse
 CVE-2024-21531,2024-10-01T06:30:47Z,"git-shallow-clone OS Command Injection vulnerability",git-shallow-clone,0,,MODERATE,CWE-78
 CVE-2024-21532,2024-10-08T06:30:47Z,"ggit is vulnerable to Command Injection via the fetchTags(branch) API",ggit,0,,MODERATE,CWE-78
 CVE-2024-21533,2024-10-08T06:30:48Z,"ggit is vulnerable to Arbitrary Argument Injection via the clone() API",ggit,0,,MODERATE,CWE-88
+CVE-2024-21534,2024-10-11T15:30:32Z,"JSONPath Plus Remote Code Execution (RCE) Vulnerability",jsonpath-plus,0,10.0.0,CRITICAL,CWE-94
+CVE-2024-21535,2024-10-15T06:30:31Z,"Cross site scripting in markdown-to-jsx",markdown-to-jsx,0,7.4.0,MODERATE,CWE-79
 CVE-2024-21668,2024-01-09T19:33:09Z,"react-native-mmkv Insertion of Sensitive Information into Log File vulnerability",react-native-mmkv,0,2.11.0,MODERATE,CWE-532
 CVE-2024-21908,2021-10-22T16:24:02Z,"Cross-site scripting vulnerability in TinyMCE",tinymce,0,5.9.0,MODERATE,CWE-79
 CVE-2024-21910,2021-11-02T15:42:52Z,"Cross-site scripting vulnerability in TinyMCE plugins",tinymce,0,5.10.0,MODERATE,CWE-64;CWE-79
@@ -3399,6 +3401,7 @@ CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundl
 CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",rollup,3.0.0,3.29.5,HIGH,CWE-79
 CVE-2024-47068,2024-09-23T22:11:02Z,"DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",rollup,4.0.0,4.22.4,HIGH,CWE-79
 CVE-2024-47075,2024-09-26T17:54:24Z,"Layui has DOM Clobbering gadgets that leads to Cross-site Scripting",layui,0,2.9.17,MODERATE,CWE-79
+CVE-2024-47080,2024-10-15T18:07:26Z,"Matrix JavaScript SDK's key history sharing could share keys to malicious devices",matrix-js-sdk,9.11.0,34.8.0,HIGH,CWE-200;CWE-287
 CVE-2024-47169,2024-09-26T18:05:12Z,"Agnai vulnerable to Remote Code Execution via JS Upload using Directory Traversal",agnai,0,1.0.330,CRITICAL,CWE-22;CWE-35;CWE-434
 CVE-2024-47170,2024-09-26T18:07:52Z,"Agnai File Disclosure Vulnerability: JSON via Path Traversal ",agnai,0,1.0.330,LOW,CWE-22;CWE-35
 CVE-2024-47171,2024-09-26T18:16:13Z,"Agnai vulnerable to Relative Path Traversal in Image Upload",agnai,0,1.0.330,LOW,CWE-22;CWE-35
@@ -3409,9 +3412,16 @@ CVE-2024-47529,2024-10-02T19:29:35Z,"OpenC3 stores passwords in clear text (`GHS
 CVE-2024-47762,2024-10-03T16:51:24Z,"Unexpected visibility of environment variable configurations in @backstage/plugin-app-backend","@backstage/plugin-app-backend",0,0.3.75,MODERATE,CWE-440
 CVE-2024-47764,2024-10-04T20:31:00Z,"cookie accepts cookie name, path, and domain with out of bounds characters",cookie,0,0.7.0,LOW,CWE-74
 CVE-2024-47818,2024-10-07T15:10:52Z,"Saltcorn Server allows logged-in users to delete arbitrary files because of a path traversal vulnerability",@saltcorn/server,0,1.0.0-beta.16,HIGH,CWE-22
+CVE-2024-47824,2024-10-15T18:11:51Z,"Malicious homeservers can steal message keys when the matrix-react-sdk user invites another user to a room",matrix-react-sdk,3.18.0,3.102.0,HIGH,CWE-200
+CVE-2024-47831,2024-10-14T19:45:21Z,"Denial of Service condition in Next.js image optimization",next,10.0.0,14.2.7,MODERATE,CWE-674
 CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,0,2.5.0,HIGH,CWE-79
 CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,3.0.0,3.1.3,HIGH,CWE-79
-CVE-2024-48949,2024-10-10T03:30:44Z,"Elliptic's verify function omits validation",elliptic,0,6.5.6,LOW,CWE-347
+CVE-2024-47885,2024-10-14T20:02:21Z,"DOM Clobbering Gadget found in astro's client-side router that leads to XSS",astro,3.0.0,4.16.1,MODERATE,CWE-79
+CVE-2024-48913,2024-10-15T17:43:50Z,"Hano allows bypass of CSRF Middleware by a request without Content-Type header.",hono,0,4.6.5,MODERATE,CWE-352
+CVE-2024-48914,2024-10-15T18:00:02Z,"Vendure asset server plugin has local file read vulnerability with AssetServerPlugin & LocalAssetStorageStrategy","@vendure/asset-server-plugin",0,2.3.3,CRITICAL,CWE-20;CWE-22
+CVE-2024-48914,2024-10-15T18:00:02Z,"Vendure asset server plugin has local file read vulnerability with AssetServerPlugin & LocalAssetStorageStrategy","@vendure/asset-server-plugin",3.0.0,3.0.5,CRITICAL,CWE-20;CWE-22
+CVE-2024-48948,2024-10-15T15:30:56Z,"Valid ECDSA signatures erroneously rejected in Elliptic",elliptic,0,,LOW,CWE-347
+CVE-2024-48949,2024-10-10T03:30:44Z,"Elliptic's verify function omits uniqueness validation",elliptic,0,6.5.6,LOW,CWE-347
 CVE-2024-5389,2024-06-10T00:30:39Z,"lunary-ai/lunary Access Control Vulnerability in Prompt Variation Management",lunary,0,1.4.9,CRITICAL,CWE-1220
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6087,2024-09-13T18:31:48Z,"Lunary improper access control vulnerability",lunary,0,1.4.9,MODERATE,CWE-284
@@ -3432,7 +3442,7 @@ CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to
 CVE-2024-9148,2024-09-25T03:30:36Z,"Flowise and Flowise Chat Embed vulnerable to Stored Cross-site Scripting",flowise-embed,0,2.0.0,MODERATE,CWE-79
 CVE-2024-9266,2024-10-03T21:31:05Z,"Express Open Redirect vulnerability",express,3.4.5,4.0.0-rc1,LOW,CWE-601
 CVE-2024-9283,2024-09-27T15:30:35Z,"ReLaXed Cross-site Scripting vulnerability",relaxedjs,0,,LOW,CWE-79
-CVE-2024-9440,2024-10-02T21:30:34Z,"Slim Select has potential Cross-site Scripting issue",slim-select,2.0.0,,LOW,CWE-79
+CVE-2024-9440,2024-10-02T21:30:34Z,"Slim Select has potential Cross-site Scripting issue",slim-select,2.0.0,2.9.2,MODERATE,CWE-79
 GHSA-224h-p7p5-rh85,2020-09-01T17:32:26Z,"Directory Traversal in wenluhong1",wenluhong1,0.0.0,,HIGH,CWE-22
 GHSA-226w-6hhj-69hp,2020-09-03T19:06:52Z,"Malicious Package in cal_rd",cal_rd,0.0.0,,CRITICAL,CWE-506
 GHSA-22h7-7wwg-qmgg,2020-09-04T17:56:39Z,"Prototype Pollution in @hapi/hoek",@hapi/hoek,8.3.2,8.5.1,LOW,CWE-1321
