@@ -15,6 +15,8 @@
  */
 package org.openrewrite.nodejs.internal;
 
+import org.jspecify.annotations.Nullable;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -29,7 +31,7 @@ public class VersionParser {
     public VersionParser() {
     }
 
-    public Version transform(String original) {
+    public @Nullable Version transform(String original) {
         return cache.computeIfAbsent(original, this::parse);
     }
 
