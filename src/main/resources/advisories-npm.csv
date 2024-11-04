@@ -1098,6 +1098,13 @@ CVE-2020-26299,2021-02-10T18:11:34Z,"File System Bounds Escape",ftp-srv,0,4.4.0,
 CVE-2020-26300,2020-10-27T20:40:00Z,"Command Injection in systeminformation",systeminformation,0,4.26.2,MODERATE,CWE-78
 CVE-2020-26301,2021-09-21T16:50:46Z,"OS Command Injection in ssh2",ssh2,0,1.4.0,HIGH,CWE-78
 CVE-2020-26302,2023-07-06T19:24:05Z,"is_js vulnerable to Regular Expression Denial of Service",is_js,0,,HIGH,CWE-1333;CWE-400
+CVE-2020-26303,2024-10-26T21:30:46Z,"insane vulnerable to Regular Expression Denial of Service",insane,0,,MODERATE,CWE-1333
+CVE-2020-26304,2024-10-26T21:30:46Z,"Foundation Regular Expression Denial of Service vulnerability",foundation-sites,0,,MODERATE,CWE-1333
+CVE-2020-26305,2024-10-26T21:30:46Z,"CommonRegexJS Regular Expression Denial of Service vulnerability",commonregex,0,,MODERATE,CWE-1333
+CVE-2020-26306,2024-10-26T21:30:46Z,"Knwl.js Regular Expression Denial of Service vulnerability",knwl.js,0,,MODERATE,CWE-1333
+CVE-2020-26308,2024-10-26T21:30:46Z,"validate.js Regular Expression Denial of Service vulnerability",validate.js,0,,MODERATE,CWE-1333
+CVE-2020-26309,2024-10-26T21:30:46Z,"nope-validator Regular Expression Denial of Service vulnerability",nope-validator,0,0.12.1,MODERATE,CWE-1333
+CVE-2020-26311,2024-10-26T21:30:47Z,"useragent Regular Expression Denial of Service vulnerability",useragent,0,,MODERATE,CWE-1333
 CVE-2020-26768,2022-05-24T17:38:12Z,"Formstone Vulnerable to Reflected XSS",formstone,0,1.4.17,MODERATE,CWE-79
 CVE-2020-26870,2020-12-18T22:51:40Z,"Cross-site Scripting in dompurify",dompurify,0,2.0.17,MODERATE,CWE-79
 CVE-2020-26938,2022-08-30T00:00:26Z,"oauth2-server through 3.1.1 vulnerable to Open Redirect",oauth2-server,0,,HIGH,CWE-601
@@ -2601,7 +2608,7 @@ CVE-2023-26128,2023-05-27T06:30:41Z,"keep-module-latest vulnerable to Command In
 CVE-2023-26129,2023-05-27T06:30:41Z,"bwm-ng vulnerable to command injection",bwm-ng,0,,HIGH,CWE-77
 CVE-2023-26132,2023-06-10T06:30:25Z,"dottie vulnerable to Prototype Pollution",dottie,0,2.0.4,HIGH,CWE-1321
 CVE-2023-26133,2023-06-12T06:30:17Z,"progressbar.js vulnerable to Prototype Pollution",progressbar.js,0,1.1.1,HIGH,CWE-1321
-CVE-2023-26134,2023-06-28T06:30:22Z,"git-commit-info vulnerable to Command Injection",git-commit-info,0,2.0.2,CRITICAL,CWE-77;CWE-78
+CVE-2023-26134,2023-06-28T06:30:22Z,"git-commit-info vulnerable to Command Injection",git-commit-info,0,2.0.2,HIGH,CWE-77;CWE-78
 CVE-2023-26135,2023-06-30T06:30:14Z,"flatnest Prototype Pollution vulnerability",flatnest,0,,HIGH,CWE-1321
 CVE-2023-26136,2023-07-01T06:30:16Z,"tough-cookie Prototype Pollution vulnerability",tough-cookie,0,4.1.3,MODERATE,CWE-1321
 CVE-2023-26139,2023-08-01T06:30:15Z,"underscore-keypath vulnerable to Prototype Pollution",underscore-keypath,0.0.11,,HIGH,CWE-1321
@@ -2974,6 +2981,7 @@ CVE-2024-21534,2024-10-11T15:30:32Z,"JSONPath Plus Remote Code Execution (RCE) V
 CVE-2024-21535,2024-10-15T06:30:31Z,"Cross site scripting in markdown-to-jsx",markdown-to-jsx,0,7.4.0,MODERATE,CWE-79
 CVE-2024-21536,2024-10-19T06:30:30Z,"Denial of service in http-proxy-middleware",http-proxy-middleware,0,2.0.7,HIGH,CWE-400
 CVE-2024-21536,2024-10-19T06:30:30Z,"Denial of service in http-proxy-middleware",http-proxy-middleware,3.0.0,3.0.3,HIGH,CWE-400
+CVE-2024-21537,2024-10-31T06:30:45Z,"lilconfig Code Injection vulnerability",lilconfig,3.1.0,3.1.1,HIGH,CWE-94
 CVE-2024-21668,2024-01-09T19:33:09Z,"react-native-mmkv Insertion of Sensitive Information into Log File vulnerability",react-native-mmkv,0,2.11.0,MODERATE,CWE-532
 CVE-2024-21908,2021-10-22T16:24:02Z,"Cross-site scripting vulnerability in TinyMCE",tinymce,0,5.9.0,MODERATE,CWE-79
 CVE-2024-21910,2021-11-02T15:42:52Z,"Cross-site scripting vulnerability in TinyMCE plugins",tinymce,0,5.10.0,MODERATE,CWE-64;CWE-79
@@ -3326,6 +3334,7 @@ CVE-2024-42459,2024-08-02T09:31:35Z,"Elliptic's EDDSA missing signature length c
 CVE-2024-42460,2024-08-02T09:31:35Z,"Elliptic's ECDSA missing check for whether leading bit of r and s is zero",elliptic,2.0.0,6.5.7,LOW,CWE-130
 CVE-2024-42461,2024-08-02T09:31:35Z,"Elliptic allows BER-encoded signatures",elliptic,5.2.1,6.5.7,LOW,CWE-347
 CVE-2024-42471,2024-09-03T20:08:30Z,"@actions/artifact has an Arbitrary File Write via artifact extraction",@actions/artifact,2.0.0,2.1.7,HIGH,CWE-22
+CVE-2024-42515,2024-10-31T21:31:45Z,"Glossarizer Cross-site Scripting vulnerability",glossarizer,0,,MODERATE,CWE-79
 CVE-2024-42640,2024-10-11T18:32:49Z,"angular-base64-upload vulnerable to unauthenticated remote code execution",angular-base64-upload,0,0.1.21,CRITICAL,CWE-434
 CVE-2024-43368,2024-08-14T18:11:53Z,"Trix has a cross-site Scripting vulnerability on copy & paste ",trix,0,2.1.4,MODERATE,CWE-79
 CVE-2024-43370,2024-08-15T18:06:50Z,"gettext.js has a Cross-site Scripting injection ",gettext.js,0,2.0.3,HIGH,CWE-79
@@ -3420,16 +3429,19 @@ CVE-2024-47831,2024-10-14T19:45:21Z,"Denial of Service condition in Next.js imag
 CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,0,2.5.0,HIGH,CWE-79
 CVE-2024-47875,2024-10-11T17:27:29Z,"DOMpurify has a nesting-based mXSS",dompurify,3.0.0,3.1.3,HIGH,CWE-79
 CVE-2024-47885,2024-10-14T20:02:21Z,"DOM Clobbering Gadget found in astro's client-side router that leads to XSS",astro,3.0.0,4.16.1,MODERATE,CWE-79
+CVE-2024-48910,2024-10-31T14:23:34Z,"DOMPurify vulnerable to tampering by prototype polution",dompurify,0,2.4.2,CRITICAL,CWE-1321
 CVE-2024-48913,2024-10-15T17:43:50Z,"Hano allows bypass of CSRF Middleware by a request without Content-Type header.",hono,0,4.6.5,MODERATE,CWE-352
 CVE-2024-48914,2024-10-15T18:00:02Z,"Vendure asset server plugin has local file read vulnerability with AssetServerPlugin & LocalAssetStorageStrategy","@vendure/asset-server-plugin",0,2.3.3,CRITICAL,CWE-20;CWE-22
 CVE-2024-48914,2024-10-15T18:00:02Z,"Vendure asset server plugin has local file read vulnerability with AssetServerPlugin & LocalAssetStorageStrategy","@vendure/asset-server-plugin",3.0.0,3.0.5,CRITICAL,CWE-20;CWE-22
 CVE-2024-48930,2024-10-21T17:28:26Z,"secp256k1-node allows private key extraction over ECDH",secp256k1,0,3.8.1,HIGH,CWE-200;CWE-354
 CVE-2024-48930,2024-10-21T17:28:26Z,"secp256k1-node allows private key extraction over ECDH",secp256k1,4.0.0,4.0.4,HIGH,CWE-200;CWE-354
 CVE-2024-48930,2024-10-21T17:28:26Z,"secp256k1-node allows private key extraction over ECDH",secp256k1,5.0.0,5.0.1,HIGH,CWE-200;CWE-354
-CVE-2024-48948,2024-10-15T15:30:56Z,"Valid ECDSA signatures erroneously rejected in Elliptic",elliptic,0,,LOW,CWE-347
+CVE-2024-48948,2024-10-15T15:30:56Z,"Valid ECDSA signatures erroneously rejected in Elliptic",elliptic,0,6.6.0,LOW,CWE-347
 CVE-2024-48949,2024-10-10T03:30:44Z,"Elliptic's verify function omits uniqueness validation",elliptic,0,6.5.6,LOW,CWE-347
 CVE-2024-48963,2024-10-23T21:30:28Z,"OS Command Injection in Snyk php plugin",snyk-php-plugin,0,1.10.0,HIGH,CWE-78
-CVE-2024-48964,2024-10-23T21:30:28Z,"OS Command Injection in Snyk gradle plugin",snyk-gradle-plugin,0,4.5.0,HIGH,CWE-78
+CVE-2024-48964,2024-10-23T21:30:28Z,"OS Command Injection in Snyk gradle plugin",snyk-gradle-plugin,0,4.5.0,HIGH,CWE-78;CWE-94
+CVE-2024-49770,2024-11-01T21:37:10Z,"Path traversal in oak allows transfer of hidden files within the served root directory",@oakserver/oak,0,,HIGH,CWE-22;CWE-35
+CVE-2024-50611,2024-10-28T00:30:48Z,"CycloneDX cdxgen may execute code contained within build-related files",@cyclonedx/cdxgen,0,,MODERATE,CWE-94
 CVE-2024-5389,2024-06-10T00:30:39Z,"lunary-ai/lunary Access Control Vulnerability in Prompt Variation Management",lunary,0,1.4.9,CRITICAL,CWE-1220
 CVE-2024-5478,2024-06-06T21:30:37Z,"lunary-ai/lunary XSS in SAML metadata endpoint",lunary,0,,HIGH,CWE-79
 CVE-2024-6087,2024-09-13T18:31:48Z,"Lunary improper access control vulnerability",lunary,0,1.4.9,MODERATE,CWE-284
@@ -3442,6 +3454,8 @@ CVE-2024-6783,2024-07-23T15:31:09Z,"vue-template-compiler vulnerable to client-s
 CVE-2024-6833,2024-07-17T15:30:52Z,"Zowe CLI allows storage of previously entered secure credentials in a plaintext file",@zowe/cli,7.18.0,7.23.5,MODERATE,CWE-256
 CVE-2024-6862,2024-09-13T18:31:48Z,"Lunary Cross-Site Request Forgery (CSRF) vulnerability",lunary,0,1.4.10,MODERATE,CWE-352
 CVE-2024-6867,2024-09-13T18:31:48Z,"Lunary information disclosure vulnerability",lunary,0,1.4.10,MODERATE,CWE-1220
+CVE-2024-7042,2024-10-29T15:32:05Z,"@langchain/community SQL Injection vulnerability",@langchain/community,0,0.3.3,LOW,CWE-89
+CVE-2024-7774,2024-10-29T15:32:05Z,"Langchain Path Traversal vulnerability",langchain,0,0.2.19,MODERATE,CWE-22;CWE-29
 CVE-2024-8181,2024-08-27T15:32:49Z,"Flowise Authentication Bypass vulnerability",flowise,0,,HIGH,CWE-285;CWE-287
 CVE-2024-8182,2024-08-27T15:32:51Z,"Flowise Unauthenticated Denial of Service (DoS) vulnerability",flowise,0,,HIGH,CWE-400
 CVE-2024-8372,2024-09-09T15:30:41Z,"AngularJS allows attackers to bypass common image source restrictions",angular,1.3.0-rc.4,,LOW,CWE-1289
