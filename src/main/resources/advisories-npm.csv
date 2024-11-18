@@ -2977,11 +2977,14 @@ CVE-2024-21529,2024-09-11T06:30:39Z,"dset Prototype Pollution vulnerability",dse
 CVE-2024-21531,2024-10-01T06:30:47Z,"git-shallow-clone Argument Injection vulnerability",git-shallow-clone,0,,MODERATE,CWE-88
 CVE-2024-21532,2024-10-08T06:30:47Z,"ggit is vulnerable to Command Injection via the fetchTags(branch) API",ggit,0,,MODERATE,CWE-78
 CVE-2024-21533,2024-10-08T06:30:48Z,"ggit is vulnerable to Arbitrary Argument Injection via the clone() API",ggit,0,,MODERATE,CWE-88
-CVE-2024-21534,2024-10-11T15:30:32Z,"JSONPath Plus Remote Code Execution (RCE) Vulnerability",jsonpath-plus,0,10.0.0,CRITICAL,CWE-94
+CVE-2024-21534,2024-10-11T15:30:32Z,"JSONPath Plus Remote Code Execution (RCE) Vulnerability",jsonpath-plus,0,10.0.7,CRITICAL,CWE-94
 CVE-2024-21535,2024-10-15T06:30:31Z,"Cross site scripting in markdown-to-jsx",markdown-to-jsx,0,7.4.0,MODERATE,CWE-79
 CVE-2024-21536,2024-10-19T06:30:30Z,"Denial of service in http-proxy-middleware",http-proxy-middleware,0,2.0.7,HIGH,CWE-400
 CVE-2024-21536,2024-10-19T06:30:30Z,"Denial of service in http-proxy-middleware",http-proxy-middleware,3.0.0,3.0.3,HIGH,CWE-400
 CVE-2024-21537,2024-10-31T06:30:45Z,"lilconfig Code Injection vulnerability",lilconfig,3.1.0,3.1.1,HIGH,CWE-94
+CVE-2024-21538,2024-11-08T06:30:47Z,"Regular Expression Denial of Service (ReDoS) in cross-spawn",cross-spawn,0,7.0.5,HIGH,CWE-1333
+CVE-2024-21539,2024-11-15T20:47:31Z,"Regular Expression Denial of Service (ReDoS) in @eslint/plugin-kit",@eslint/plugin-kit,0,0.2.3,HIGH,CWE-1333
+CVE-2024-21541,2024-11-13T06:30:29Z,"dom-iterator code execution vulnerability",dom-iterator,0,,MODERATE,CWE-94
 CVE-2024-21668,2024-01-09T19:33:09Z,"react-native-mmkv Insertion of Sensitive Information into Log File vulnerability",react-native-mmkv,0,2.11.0,MODERATE,CWE-532
 CVE-2024-21908,2021-10-22T16:24:02Z,"Cross-site scripting vulnerability in TinyMCE",tinymce,0,5.9.0,MODERATE,CWE-79
 CVE-2024-21910,2021-11-02T15:42:52Z,"Cross-site scripting vulnerability in TinyMCE plugins",tinymce,0,5.10.0,MODERATE,CWE-64;CWE-79
@@ -3417,8 +3420,8 @@ CVE-2024-47169,2024-09-26T18:05:12Z,"Agnai vulnerable to Remote Code Execution v
 CVE-2024-47170,2024-09-26T18:07:52Z,"Agnai File Disclosure Vulnerability: JSON via Path Traversal ",agnai,0,1.0.330,LOW,CWE-22;CWE-35
 CVE-2024-47171,2024-09-26T18:16:13Z,"Agnai vulnerable to Relative Path Traversal in Image Upload",agnai,0,1.0.330,LOW,CWE-22;CWE-35
 CVE-2024-47178,2024-09-30T17:48:29Z,"basic-auth-connect's callback uses time unsafe string comparison",basic-auth-connect,0,1.1.0,HIGH,CWE-208
-CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,0,6.5.9,HIGH,CWE-285
-CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,7.0.0,7.3.0,HIGH,CWE-285
+CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,0,6.5.9,HIGH,CWE-285;CWE-863
+CVE-2024-47183,2024-10-04T18:50:56Z,"Parse Server's custom object ID allows to acquire role privileges",parse-server,7.0.0,7.3.0,HIGH,CWE-285;CWE-863
 CVE-2024-47529,2024-10-02T19:29:35Z,"OpenC3 stores passwords in clear text (`GHSL-2024-129`)",@openc3/tool-common,0,5.19.0,MODERATE,CWE-312;CWE-522
 CVE-2024-47762,2024-10-03T16:51:24Z,"Unexpected visibility of environment variable configurations in @backstage/plugin-app-backend","@backstage/plugin-app-backend",0,0.3.75,MODERATE,CWE-440
 CVE-2024-47764,2024-10-04T20:31:00Z,"cookie accepts cookie name, path, and domain with out of bounds characters",cookie,0,0.7.0,LOW,CWE-74
@@ -3440,7 +3443,9 @@ CVE-2024-48948,2024-10-15T15:30:56Z,"Valid ECDSA signatures erroneously rejected
 CVE-2024-48949,2024-10-10T03:30:44Z,"Elliptic's verify function omits uniqueness validation",elliptic,0,6.5.6,LOW,CWE-347
 CVE-2024-48963,2024-10-23T21:30:28Z,"OS Command Injection in Snyk php plugin",snyk-php-plugin,0,1.10.0,HIGH,CWE-78
 CVE-2024-48964,2024-10-23T21:30:28Z,"OS Command Injection in Snyk gradle plugin",snyk-gradle-plugin,0,4.5.0,HIGH,CWE-78;CWE-94
+CVE-2024-49362,2024-11-14T17:38:14Z,"Remote Code Execution on click of <a> Link in markdown preview",joplin,3.0,3.1,HIGH,CWE-94
 CVE-2024-49770,2024-11-01T21:37:10Z,"Path traversal in oak allows transfer of hidden files within the served root directory",@oakserver/oak,0,,HIGH,CWE-22;CWE-35
+CVE-2024-50336,2024-11-12T19:54:38Z,"matrix-js-sdk has insufficient MXC URI validation which allows client-side path traversal",matrix-js-sdk,0,34.11.1,MODERATE,CWE-22
 CVE-2024-50611,2024-10-28T00:30:48Z,"CycloneDX cdxgen may execute code contained within build-related files",@cyclonedx/cdxgen,0,,MODERATE,CWE-94
 CVE-2024-51752,2024-11-05T17:34:23Z,"@workos-inc/authkit-nextjs refresh tokens are logged when the debug flag is enabled","@workos-inc/authkit-nextjs",0,0.13.2,LOW,CWE-532
 CVE-2024-51753,2024-11-05T17:34:47Z,"@workos-inc/authkit-remix refresh tokens are logged when the debug flag is enabled","@workos-inc/authkit-remix",0,0.4.1,LOW,CWE-532
