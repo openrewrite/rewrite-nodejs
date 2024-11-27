@@ -13,6 +13,8 @@ dependencies {
 
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    testImplementation("org.openrewrite:rewrite-test:${rewriteVersion}")
 }
 
 configure<PublishingExtension> {
